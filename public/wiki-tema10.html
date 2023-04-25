@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test HTLML</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous" />
+</head>
+<body>
+
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">WIKI-JAVA-JOHNNY</a>
+
+			<!-- Botón para el colapso del navbar en dispositivos móviles -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+				<ul class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button"
+							id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Temas</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="wiki-tema1.html">Tema1</a> <a
+								class="dropdown-item" href="wiki-tema2.html">Tema2</a> <a
+								class="dropdown-item" href="wiki-tema3.html">Tema3</a> <a
+								class="dropdown-item" href="wiki-tema4.html">Tema4</a> <a
+								class="dropdown-item" href="wiki-tema5.html">Tema5</a> <a
+								class="dropdown-item" href="wiki-tema6.html">Tema6</a> <a
+								class="dropdown-item" href="wiki-tema7.html">Tema7</a> <a
+								class="dropdown-item" href="wiki-tema8.html">Tema8</a> <a
+								class="dropdown-item" href="wiki-tema9.html">Tema9</a> <a
+								class="dropdown-item" href="wiki-tema10.html">Tema10</a>
+						</div>
+					</div>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div class="container-central-2 container-fluid ">
+
+		<div class="contendor-texto-tema">
+			<h1 class="texto-tema text-center">Tema 10</h1>
+			<h3 class="texto-tema-h3 text-center">Spring boot avanzado</h3>
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de
+				configuraciones externas en aplicaciones Spring Boot: uso de Spring
+				Cloud Config</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En aplicaciones Spring Boot, la gestión de configuraciones
+				externas es una tarea importante para garantizar la portabilidad y
+				escalabilidad del sistema. Una solución popular para la gestión de
+				configuraciones externas en aplicaciones Spring Boot es Spring Cloud
+				Config.</p>
+
+			<p>Spring Cloud Config es un servicio de configuración
+				centralizado que permite almacenar y recuperar configuraciones para
+				múltiples aplicaciones. Con Spring Cloud Config, se puede almacenar
+				la configuración en un repositorio Git o en un servicio de
+				almacenamiento en la nube, como Amazon S3.</p>
+
+			<p>Para utilizar Spring Cloud Config en una aplicación Spring
+				Boot, se debe agregar la dependencia de Spring Cloud Config en el
+				archivo pom.xml y configurar la ubicación del servidor de
+				configuración en el archivo bootstrap.yml.</p>
+
+			<p>Una vez que se ha configurado la conexión con el servidor de
+				configuración, se pueden recuperar las configuraciones externas
+				utilizando la anotación @Value o mediante la creación de un bean de
+				configuración.</p>
+
+			<p>Una de las principales ventajas de Spring Cloud Config es la
+				capacidad de actualizar dinámicamente la configuración sin necesidad
+				de reiniciar la aplicación. Esto permite una mayor flexibilidad y
+				adaptabilidad en entornos de producción.</p>
+
+			<p>En resumen, Spring Cloud Config es una solución popular para
+				la gestión de configuraciones externas en aplicaciones Spring Boot.
+				Permite almacenar y recuperar configuraciones para múltiples
+				aplicaciones y proporciona la capacidad de actualizar dinámicamente
+				la configuración sin necesidad de reiniciar la aplicación.</p>
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de discovery service y balanceo de carga en aplicaciones Spring
+				Boot: uso de Spring Cloud Netflix Eureka y Ribbon</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En aplicaciones Spring Boot distribuidas, el descubrimiento de
+				servicios y el balanceo de carga son tareas importantes para
+				garantizar la escalabilidad y la disponibilidad del sistema. Spring
+				Cloud Netflix ofrece dos soluciones populares para estas tareas:
+				Eureka y Ribbon.</p>
+
+			<p>Spring Cloud Netflix Eureka es un servicio de descubrimiento
+				de servicios que permite que las aplicaciones se registren y
+				descubran entre sí. Las aplicaciones que se registran en Eureka se
+				denominan "clientes" y pueden descubrir otros clientes mediante la
+				consulta del registro de Eureka.</p>
+
+			<p>Para utilizar Eureka en una aplicación Spring Boot, se debe
+				agregar la dependencia de Eureka en el archivo pom.xml y configurar
+				la ubicación del servidor Eureka en el archivo bootstrap.yml. Luego,
+				se debe agregar la anotación @EnableEurekaClient en la clase
+				principal de la aplicación.</p>
+
+			<p>Spring Cloud Netflix Ribbon es una biblioteca de balanceo de
+				carga que funciona en conjunto con Eureka. Ribbon utiliza
+				información del registro de Eureka para distribuir la carga entre
+				múltiples instancias de un servicio.</p>
+
+			<p>Para utilizar Ribbon en una aplicación Spring Boot, se debe
+				agregar la dependencia de Ribbon en el archivo pom.xml y configurar
+				la estrategia de balanceo de carga en el archivo bootstrap.yml.
+				Luego, se debe crear un cliente de servicio utilizando la anotación
+				@LoadBalanced y la interfaz RestTemplate.</p>
+
+			<p>En resumen, Spring Cloud Netflix Eureka y Ribbon son
+				soluciones populares para la implementación de discovery service y
+				balanceo de carga en aplicaciones Spring Boot distribuidas. Eureka
+				permite que las aplicaciones se registren y descubran entre sí,
+				mientras que Ribbon se encarga de distribuir la carga entre
+				múltiples instancias de un servicio. Juntos, estos servicios
+				proporcionan una mayor escalabilidad y disponibilidad en entornos de
+				producción.</p>
+
+
+
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso de Spring
+				Cloud Gateway para la implementación de API Gateway en aplicaciones
+				Spring Boot</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En aplicaciones Spring Boot distribuidas, el descubrimiento de
+				servicios y el balanceo de carga son tareas importantes para
+				garantizar la escalabilidad y la disponibilidad del sistema. Spring
+				Cloud Netflix ofrece dos soluciones populares para estas tareas:
+				Eureka y Ribbon.</p>
+
+			<p>Spring Cloud Netflix Eureka es un servicio de descubrimiento
+				de servicios que permite que las aplicaciones se registren y
+				descubran entre sí. Las aplicaciones que se registran en Eureka se
+				denominan "clientes" y pueden descubrir otros clientes mediante la
+				consulta del registro de Eureka.</p>
+
+			<p>Para utilizar Eureka en una aplicación Spring Boot, se debe
+				agregar la dependencia de Eureka en el archivo pom.xml y configurar
+				la ubicación del servidor Eureka en el archivo bootstrap.yml. Luego,
+				se debe agregar la anotación @EnableEurekaClient en la clase
+				principal de la aplicación.</p>
+
+			<p>Spring Cloud Netflix Ribbon es una biblioteca de balanceo de
+				carga que funciona en conjunto con Eureka. Ribbon utiliza
+				información del registro de Eureka para distribuir la carga entre
+				múltiples instancias de un servicio.</p>
+
+			<p>Para utilizar Ribbon en una aplicación Spring Boot, se debe
+				agregar la dependencia de Ribbon en el archivo pom.xml y configurar
+				la estrategia de balanceo de carga en el archivo bootstrap.yml.
+				Luego, se debe crear un cliente de servicio utilizando la anotación
+				@LoadBalanced y la interfaz RestTemplate.</p>
+
+			<p>Spring Cloud Netflix Eureka y Ribbon son soluciones populares
+				para la implementación de discovery service y balanceo de carga en
+				aplicaciones Spring Boot distribuidas. Eureka permite que las
+				aplicaciones se registren y descubran entre sí, mientras que Ribbon
+				se encarga de distribuir la carga entre múltiples instancias de un
+				servicio. Juntos, estos servicios proporcionan una mayor
+				escalabilidad y disponibilidad en entornos de producción.</p>
+
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de circuit breaker y fallback en aplicaciones Spring Boot: uso de
+				Spring Cloud Netflix Hystrix</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En aplicaciones Spring Boot distribuidas, el circuit breaker y
+				el fallback son técnicas importantes para mejorar la tolerancia a
+				fallos y la resiliencia del sistema. Spring Cloud Netflix Hystrix es
+				una solución popular para implementar estas técnicas.</p>
+
+			<p>Spring Cloud Netflix Hystrix es una biblioteca que permite
+				agregar circuit breaker y fallback a las llamadas remotas en una
+				aplicación Spring Boot. Cuando una llamada remota falla o tarda
+				demasiado en responder, Hystrix puede activar el circuit breaker y
+				redirigir la llamada a un fallback, lo que permite que la aplicación
+				continúe funcionando sin interrupción.</p>
+
+			<p>Para utilizar Hystrix en una aplicación Spring Boot, se debe
+				agregar la dependencia de Hystrix en el archivo pom.xml y habilitar
+				Hystrix en la aplicación mediante la anotación
+				@EnableCircuitBreaker. Luego, se debe envolver la llamada remota en
+				un objeto HystrixCommand y configurar el fallback correspondiente.</p>
+
+			<p>Además del circuit breaker y el fallback, Hystrix también
+				proporciona métricas y monitoreo para las llamadas remotas. Las
+				métricas incluyen el número de llamadas, el número de llamadas
+				fallidas, el tiempo de espera promedio y más.</p>
+
+			<p>En resumen, Spring Cloud Netflix Hystrix es una solución
+				popular para implementar circuit breaker y fallback en aplicaciones
+				Spring Boot distribuidas. Permite que la aplicación continúe
+				funcionando sin interrupción cuando las llamadas remotas fallan o
+				tardan demasiado en responder, y proporciona métricas y monitoreo
+				para las llamadas remotas.ortante que las dependencias se declaren
+				de manera precisa y coherente en el archivo pom.xml para garantizar
+				que el proyecto se construya correctamente y se puedan resolver las
+				dependencias requeridas.
+			<p>
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso de Spring
+				Cloud Sleuth para la trazabilidad y seguimiento de solicitudes en
+				aplicaciones Spring Boot</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En aplicaciones Spring Boot distribuidas, el circuit breaker y
+				el fallback son técnicas importantes para mejorar la tolerancia a
+				fallos y la resiliencia del sistema. Spring Cloud Netflix Hystrix es
+				una solución popular para implementar estas técnicas.</p>
+
+			<p>Spring Cloud Netflix Hystrix es una biblioteca que permite
+				agregar circuit breaker y fallback a las llamadas remotas en una
+				aplicación Spring Boot. Cuando una llamada remota falla o tarda
+				demasiado en responder, Hystrix puede activar el circuit breaker y
+				redirigir la llamada a un fallback, lo que permite que la aplicación
+				continúe funcionando sin interrupción.</p>
+
+			<p>Para utilizar Hystrix en una aplicación Spring Boot, se debe
+				agregar la dependencia de Hystrix en el archivo pom.xml y habilitar
+				Hystrix en la aplicación mediante la anotación
+				@EnableCircuitBreaker. Luego, se debe envolver la llamada remota en
+				un objeto HystrixCommand y configurar el fallback correspondiente.</p>
+
+			<p>Además del circuit breaker y el fallback, Hystrix también
+				proporciona métricas y monitoreo para las llamadas remotas. Las
+				métricas incluyen el número de llamadas, el número de llamadas
+				fallidas, el tiempo de espera promedio y más.</p>
+
+			<p>En resumen, Spring Cloud Netflix Hystrix es una solución
+				popular para implementar circuit breaker y fallback en aplicaciones
+				Spring Boot distribuidas. Permite que la aplicación continúe
+				funcionando sin interrupción cuando las llamadas remotas fallan o
+				tardan demasiado en responder, y proporciona métricas y monitoreo
+				para las llamadas remotas.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de servicio de configuración distribuida en aplicaciones Spring
+				Boot: uso de Spring Cloud Consul o Zookeeper</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Spring Cloud Consul y Spring Cloud Zookeeper son servicios de
+				descubrimiento y configuración distribuidos que permiten a las
+				aplicaciones registrar y descubrir entre sí y también gestionar la
+				configuración de forma centralizada.</p>
+
+			<p>Para utilizar Spring Cloud Consul o Spring Cloud Zookeeper en
+				una aplicación Spring Boot, se debe agregar la dependencia
+				correspondiente en el archivo pom.xml y configurar la ubicación del
+				servidor Consul o Zookeeper en el archivo bootstrap.yml. Luego, se
+				puede utilizar la anotación @RefreshScope para indicar que un bean
+				necesita ser actualizado cuando cambia la configuración.</p>
+
+			<p>Además de la gestión de la configuración, Spring Cloud Consul
+				y Spring Cloud Zookeeper también proporcionan características de
+				descubrimiento de servicios, como el balanceo de carga y el
+				failover. Esto permite que las aplicaciones distribuidas se
+				comuniquen entre sí de manera eficiente y tolerante a fallos.</p>
+
+			<p>Spring Cloud Consul y Spring Cloud Zookeeper son soluciones
+				populares para la gestión de la configuración distribuida en
+				aplicaciones Spring Boot. Permite que las aplicaciones registren y
+				descubran entre sí, así como gestionar la configuración de forma
+				centralizada. Además, también proporcionan características de
+				descubrimiento de servicios, como el balanceo de carga y el
+				failover.</p>
+
+
+
+
+
+
+		</div>
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso de Spring
+				Cloud Stream para la implementación de aplicaciones basadas en
+				eventos</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Spring Cloud Stream es una biblioteca que permite la
+				implementación de aplicaciones basadas en eventos en entornos
+				distribuidos. Esta biblioteca proporciona una capa de abstracción
+				sobre sistemas de mensajería como RabbitMQ, Kafka y otros, lo que
+				permite que las aplicaciones se comuniquen de manera eficiente y
+				tolerante a fallos.</p>
+
+			<p>Para utilizar Spring Cloud Stream en una aplicación Spring
+				Boot, se debe agregar la dependencia correspondiente en el archivo
+				pom.xml y configurar la ubicación del sistema de mensajería en el
+				archivo bootstrap.yml. Luego, se puede utilizar la anotación
+				@StreamListener para indicar que un método escuchará un canal
+				específico en el sistema de mensajería.</p>
+
+			<p>Además de la capa de abstracción sobre sistemas de mensajería,
+				Spring Cloud Stream también proporciona características adicionales,
+				como la gestión de errores, la integración con Spring Integration y
+				Spring Batch, y el enrutamiento dinámico de mensajes.</p>
+
+			<p>Spring Cloud Stream es una solución popular para la
+				implementación de aplicaciones basadas en eventos en entornos
+				distribuidos. Permite que las aplicaciones se comuniquen de manera
+				eficiente y tolerante a fallos a través de sistemas de mensajería
+				como RabbitMQ y Kafka, y también proporciona características
+				adicionales como la gestión de errores y el enrutamiento dinámico de
+				mensajes.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de procesos batch en aplicaciones Spring Boot: uso de Spring Batch</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>Spring Batch es una biblioteca de Spring que permite la
+				implementación de procesos batch en aplicaciones Spring Boot. Esta
+				biblioteca proporciona herramientas para procesar grandes cantidades
+				de datos en lotes, como la lectura de datos, la transformación y la
+				escritura en una base de datos u otro sistema de almacenamiento.</p>
+
+			<p>Para utilizar Spring Batch en una aplicación Spring Boot, se
+				debe agregar la dependencia correspondiente en el archivo pom.xml y
+				crear un archivo de configuración para definir el proceso batch,
+				incluyendo los pasos a seguir y la configuración de lectura y
+				escritura de datos. Luego, se puede utilizar la anotación
+				@EnableBatchProcessing para habilitar la funcionalidad de Spring
+				Batch en la aplicación.</p>
+
+			<p>Además de las herramientas para procesar grandes cantidades de
+				datos en lotes, Spring Batch también proporciona características
+				adicionales, como la gestión de transacciones, la reanudación de
+				trabajos fallidos y la gestión de excepciones.</p>
+
+			<p>Spring Batch es una solución popular para la implementación de
+				procesos batch en aplicaciones Spring Boot. Permite procesar grandes
+				cantidades de datos en lotes de manera eficiente, y también
+				proporciona características adicionales como la gestión de
+				transacciones y la reanudación de trabajos fallidos.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso de Spring
+				Cloud Data Flow para la implementación y gestión de flujos de datos
+				en aplicaciones Spring Boot</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Spring Cloud Data Flow es una plataforma para la
+				implementación y gestión de flujos de datos en aplicaciones Spring
+				Boot. Esta plataforma proporciona herramientas para el diseño,
+				implementación, prueba y monitoreo de flujos de datos en tiempo real
+				y en lotes.</p>
+
+			<p>Para utilizar Spring Cloud Data Flow en una aplicación Spring
+				Boot, se debe agregar la dependencia correspondiente en el archivo
+				pom.xml y configurar la ubicación del servidor de Spring Cloud Data
+				Flow en el archivo application.yml. Luego, se puede utilizar la
+				interfaz gráfica de usuario de Spring Cloud Data Flow para diseñar y
+				desplegar flujos de datos en la aplicación.</p>
+
+			<p>Además de las herramientas para el diseño y la implementación
+				de flujos de datos, Spring Cloud Data Flow también proporciona
+				características adicionales, como la monitorización en tiempo real,
+				la integración con sistemas de mensajería como Kafka y RabbitMQ, y
+				la integración con herramientas de análisis de datos como Spring
+				Cloud Stream y Spring Batch.</p>
+
+
+
+
+		</div>
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de pruebas de rendimiento en aplicaciones Spring Boot: uso de
+				herramientas de pruebas de carga como JMeter</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Las pruebas de rendimiento son una parte importante del
+				proceso de desarrollo de aplicaciones Spring Boot, ya que permiten
+				identificar cuellos de botella y problemas de escalabilidad antes de
+				lanzar la aplicación en producción. Una herramienta comúnmente
+				utilizada para realizar pruebas de rendimiento es Apache JMeter.</p>
+
+			<p>Apache JMeter es una herramienta de prueba de carga de código
+				abierto que se utiliza para medir el rendimiento y la escalabilidad
+				de aplicaciones web. Permite simular una gran cantidad de usuarios
+				que realizan solicitudes HTTP simultáneamente, lo que permite
+				identificar los límites de la aplicación y optimizarla para un mejor
+				rendimiento.</p>
+
+			<p>Para utilizar Apache JMeter en pruebas de rendimiento de una
+				aplicación Spring Boot, se debe crear un plan de pruebas en JMeter
+				que incluya las solicitudes HTTP que se deben realizar y la cantidad
+				de usuarios simulados. Luego, se debe configurar la aplicación
+				Spring Boot para registrar el rendimiento de la aplicación y los
+				datos de monitorización, como el uso de CPU y memoria. Finalmente,
+				se puede ejecutar el plan de pruebas en JMeter y analizar los
+				resultados para identificar problemas de rendimiento.</p>
+
+			<p>Apache JMeter es una herramienta de prueba de carga de código
+				abierto que se utiliza comúnmente para realizar pruebas de
+				rendimiento en aplicaciones web, incluyendo aplicaciones Spring
+				Boot. Permite simular una gran cantidad de usuarios que realizan
+				solicitudes HTTP simultáneamente y identificar los límites de la
+				aplicación, lo que ayuda a optimizarla para un mejor rendimiento.</p>
+
+
+
+
+
+		</div>
+
+
+
+
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

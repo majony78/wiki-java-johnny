@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test HTLML</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous" />
+</head>
+<body>
+
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">WIKI-JAVA-JOHNNY</a>
+
+			<!-- Botón para el colapso del navbar en dispositivos móviles -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+				<ul class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button"
+							id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Temas</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="wiki-tema1.html">Tema1</a> <a
+								class="dropdown-item" href="wiki-tema2.html">Tema2</a> <a
+								class="dropdown-item" href="wiki-tema3.html">Tema3</a> <a
+								class="dropdown-item" href="wiki-tema4.html">Tema4</a> <a
+								class="dropdown-item" href="wiki-tema5.html">Tema5</a> <a
+								class="dropdown-item" href="wiki-tema6.html">Tema6</a> <a
+								class="dropdown-item" href="wiki-tema7.html">Tema7</a> <a
+								class="dropdown-item" href="wiki-tema8.html">Tema8</a> <a
+								class="dropdown-item" href="wiki-tema9.html">Tema9</a> <a
+								class="dropdown-item" href="wiki-tema10.html">Tema10</a>
+						</div>
+					</div>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div class="container-central-2 container-fluid ">
+
+		<div class="contendor-texto-tema">
+			<h1 class="texto-tema text-center">Tema 3</h1>
+			<h3 class="texto-tema-h3 text-center">Mantenimiento y evolutivos
+				de un proyecto Java legacy</h3>
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Introducción al
+				proyecto y su contexto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p class="parrafo-texto">El proyecto de mantenimiento y
+				evolutivos al que nos enfrentamos es un sistema Java legacy, una
+				aplicación Java que ha sido desarrollada previamente y se encuentra
+				en funcionamiento en un entorno de producción. Esta aplicación puede
+				contener código legado y haber sido construida con tecnologías Java
+				más antiguas, como Java 1.7 o versiones anteriores. A lo largo del
+				tiempo, el proyecto ha pasado por diferentes fases de desarrollo,
+				incluyendo la implementación de nuevas características, correcciones
+				de errores y cambios en los requisitos del negocio.</p>
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de la
+				arquitectura y diseño del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El análisis de la arquitectura y diseño del proyecto Java
+				legacy es un proceso esencial para comprender la estructura y
+				organización del sistema. Esto implica revisar la arquitectura de
+				software utilizada, los patrones de diseño implementados, la
+				estructura de directorios, los módulos o componentes del sistema,
+				así como su interconexión. Además, se evaluará la calidad del
+				código, la documentación y se identificarán posibles áreas de
+				mejora.</p>
+
+			<p>Es importante asegurarse de que la arquitectura y diseño del
+				proyecto cumplan con las mejores prácticas de desarrollo de software
+				y sean adecuados para las necesidades actuales del negocio. Esto
+				implicará revisar la modularidad del código, la reutilización de
+				componentes, la escalabilidad, la mantenibilidad y la seguridad del
+				sistema. También se analizará la adhesión a patrones de diseño
+				conocidos, como MVC (Modelo-Vista-Controlador) o DAO (Objeto de
+				Acceso a Datos), entre otros.</p>
+
+			<p>El análisis de la arquitectura y diseño del proyecto Java
+				legacy permitirá identificar posibles áreas de mejora y definir
+				estrategias para la modernización del sistema, incluyendo la
+				refactorización del código, la actualización de tecnologías Java y
+				la adopción de mejores prácticas de diseño de software.</p>
+
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Identificación
+				de patrones y convenciones de codificación</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>La identificación y seguimiento de patrones y convenciones de
+				codificación es esencial en nuestro proyecto Java legacy. Estos
+				patrones y convenciones son reglas y prácticas establecidas que nos
+				ayudan a mantener un código limpio, legible y mantenible. Algunos de
+				los patrones y convenciones que seguimos en nuestro proyecto son:</p>
+
+			<p>1. Convención de nomenclatura: Utilizamos nombres descriptivos
+				y significativos para variables, clases, métodos y paquetes,
+				siguiendo las convenciones de nomenclatura de Java, como camelCase
+				para variables y métodos, y PascalCase para clases e interfaces.</p>
+
+			<p>2. Patrón MVC (Modelo-Vista-Controlador): Utilizamos el patrón
+				MVC para separar la lógica de negocio (modelo), la presentación
+				(vista) y la interacción con el usuario (controlador), lo que nos
+				permite tener un código más organizado y modular.</p>
+
+			<p>3. Convención de estructura de directorios: Seguimos una
+				estructura de directorios clara y organizada para nuestros archivos
+				fuente, recursos y pruebas, lo que facilita la navegación y
+				localización de archivos en el proyecto.</p>
+
+			<p>4. Convención de comentarios: Utilizamos comentarios claros y
+				concisos en nuestro código para explicar la funcionalidad, propósito
+				y posibles limitaciones de las clases, métodos y bloques de código,
+				lo que facilita la comprensión del código por parte de otros
+				desarrolladores.</p>
+
+			<p>5. Convención de manejo de excepciones: Seguimos prácticas de
+				manejo de excepciones, como capturar y manejar adecuadamente las
+				excepciones, en lugar de ignorarlas o propagarlas
+				indiscriminadamente, lo que ayuda a mejorar la robustez y
+				confiabilidad del sistema.</p>
+
+			<p>Estos son solo algunos ejemplos de los patrones y convenciones
+				de codificación que seguimos en nuestro proyecto Java legacy. Seguir
+				estas prácticas nos ayuda a mantener un código de alta calidad,
+				fácil de entender y mantener, lo cual es fundamental para el éxito
+				del proyecto.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Revisión de la
+				estructura de directorios y organización del código fuente</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+
+			<p>Hemos realizado una revisión exhaustiva de la estructura de
+				directorios y organización del código fuente en nuestro proyecto
+				Java legacy. A continuación, se detallan las principales
+				consideraciones que hemos tenido en cuenta:</p>
+
+			<p>1. Estructura de directorios clara y organizada: Hemos
+				definido una estructura de directorios jerárquica y coherente en
+				nuestro proyecto, con carpetas bien nombradas y organizadas, que
+				reflejan la funcionalidad y el propósito de los archivos que
+				contienen. Por ejemplo, hemos creado carpetas separadas para el
+				código fuente, recursos, pruebas, documentación, etc.</p>
+
+			<p>2. Separación de responsabilidades: Hemos seguido el principio
+				de separación de responsabilidades, manteniendo un enfoque modular
+				en la organización del código fuente. Hemos agrupado clases y
+				paquetes relacionados en carpetas específicas, lo que facilita la
+				navegación y localización de archivos en el proyecto.</p>
+
+			<p>3. Nomenclatura descriptiva: Hemos utilizado nombres
+				descriptivos y significativos para las carpetas y archivos en
+				nuestra estructura de directorios. Esto nos permite entender
+				fácilmente el contenido de cada carpeta o archivo, sin necesidad de
+				abrirlo o revisar su contenido.</p>
+
+			<p>4. Archivos de configuración centralizados: Hemos mantenido
+				los archivos de configuración, como archivos de propiedades, XML,
+				etc., en carpetas específicas y centralizadas, lo que facilita su
+				gestión y mantenimiento.</p>
+
+			<p>5. Documentación actualizada: Hemos asegurado que la
+				documentación del proyecto, incluyendo los archivos README, se
+				encuentre actualizada y sea accesible en la estructura de
+				directorios del proyecto, para que otros desarrolladores puedan
+				entender rápidamente la organización del proyecto y su contenido.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Investigación de
+				tecnologías, marcos de trabajo y bibliotecas utilizadas</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Hemos realizado una investigación exhaustiva de las
+				tecnologías, marcos de trabajo y bibliotecas utilizadas en nuestro
+				proyecto Java legacy. A continuación, se detallan las principales
+				tecnologías y herramientas que hemos identificado:</p>
+
+			<p>1. Tecnologías de desarrollo: Hemos utilizado Java como
+				lenguaje de programación principal en nuestro proyecto, con
+				versiones específicas identificadas, como Java 8 o Java 11. También
+				hemos utilizado tecnologías complementarias como JSP, Servlets, JPA,
+				JDBC, etc.</p>
+
+			<p>2. Marcos de trabajo (frameworks): Hemos utilizado varios
+				marcos de trabajo (frameworks) en nuestro proyecto, incluyendo
+				Spring, Hibernate, Struts, etc. Estos marcos de trabajo nos han
+				permitido seguir patrones de diseño y buenas prácticas en el
+				desarrollo de nuestro proyecto.</p>
+
+			<p>3. Bibliotecas de terceros: Hemos utilizado varias bibliotecas
+				de terceros en nuestro proyecto para facilitar la implementación de
+				funcionalidades específicas, como por ejemplo Apache Commons, Log4j,
+				Gson, etc.</p>
+
+			<p>4. Herramientas de construcción y gestión de dependencias:
+				Hemos utilizado herramientas como Maven o Gradle para la gestión de
+				dependencias y construcción del proyecto, lo cual nos ha permitido
+				automatizar tareas de compilación, pruebas y empaquetado.</p>
+
+			<p>5. Bibliotecas de pruebas: Hemos utilizado bibliotecas de
+				pruebas como JUnit o TestNG para la implementación de pruebas
+				unitarias y de integración en nuestro proyecto, lo cual nos ha
+				permitido asegurar la calidad del código y la funcionalidad del
+				proyecto.</p>
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Identificación
+				de las dependencias externas del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>Durante el análisis del proyecto Java legacy, hemos
+				identificado las dependencias externas utilizadas en el proyecto.
+				Estas dependencias son bibliotecas o componentes de terceros que son
+				utilizados por nuestro proyecto para proporcionar funcionalidades
+				adicionales. A continuación, se detallan algunas de las principales
+				dependencias externas identificadas:</p>
+
+			<p>1. Apache Commons: Una biblioteca de utilidades de propósito
+				general que proporciona funcionalidades adicionales para la
+				manipulación de archivos, colecciones, fechas, matemáticas, etc.</p>
+
+			<p>2. Log4j: Una biblioteca de registro de eventos que nos
+				permite registrar mensajes de registro en diferentes niveles de
+				severidad y configurar la salida de los registros a diferentes
+				destinos.</p>
+
+			<p>3. Gson: Una biblioteca de Google para la manipulación de
+				objetos JSON, que nos permite convertir objetos Java en notación
+				JSON y viceversa.</p>
+
+			<p>4. Spring: Un marco de trabajo ampliamente utilizado en
+				aplicaciones Java para la construcción de aplicaciones
+				empresariales, que proporciona un conjunto completo de
+				características para el desarrollo de aplicaciones web, integración
+				de servicios, acceso a bases de datos, etc.</p>
+
+			<p>5. Hibernate: Un marco de trabajo de mapeo objeto-relacional
+				(ORM) que nos permite interactuar con bases de datos relacionales
+				utilizando objetos Java, proporcionando una capa de abstracción
+				sobre la base de datos.</p>
+
+			<p>6. JUnit: Una biblioteca de pruebas unitarias que nos permite
+				escribir y ejecutar pruebas automatizadas en el código Java para
+				asegurar su calidad y correcto funcionamiento.</p>
+
+			<p>7. Apache HttpClient: Una biblioteca para la realización de
+				solicitudes HTTP en aplicaciones Java, que nos permite interactuar
+				con servicios web y consumir APIs de manera sencilla.</p>
+
+			<p>8. MySQL Connector/J: Un controlador JDBC para la conexión a
+				bases de datos MySQL desde aplicaciones Java, que nos permite
+				interactuar con bases de datos MySQL de manera eficiente.</p>
+
+			<p>9. JSP: Una tecnología de Java para la creación de páginas web
+				dinámicas, que nos permite separar la lógica de negocio del diseño
+				de las páginas web en aplicaciones Java.</p>
+
+			<p>10. JavaMail: Una biblioteca para el envío y recepción de
+				correos electrónicos desde aplicaciones Java, que nos permite
+				integrar la funcionalidad de correo electrónico en nuestras
+				aplicaciones.</p>
+
+			<p>11. Jackson: Una biblioteca para la manipulación de JSON en
+				Java, que nos permite convertir objetos Java en notación JSON y
+				viceversa, similar a Gson.</p>
+
+			<p>Estas son solo algunas de las dependencias externas
+				identificadas en nuestro proyecto. Es importante tener en cuenta las
+				dependencias externas utilizadas en el proyecto, ya que pueden tener
+				impacto en el mantenimiento y evolución del proyecto, y deben ser
+				gestionadas adecuadamente para asegurar la estabilidad y seguridad
+				del proyecto a lo largo del tiempo.</p>
+
+
+
+		</div>
+
+
+
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de la
+				configuración del proyecto y sus archivos de configuración</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>La configuración de un proyecto Java legacy generalmente
+				incluye varios archivos de configuración que definen la forma en que
+				la aplicación se comporta y se integra con otros componentes del
+				sistema. Algunos de los archivos de configuración más comunes que se
+				pueden encontrar en un proyecto Java legacy son:</p>
+
+			<p>1. Archivo de configuración del proyecto: Este archivo central
+				contiene información de configuración global para el proyecto, como
+				la configuración del entorno de desarrollo, la configuración del
+				entorno de producción, las variables de entorno, las rutas de
+				archivos, etc.</p>
+
+			<p>2. Archivo de configuración de la base de datos: Este archivo
+				contiene la configuración relacionada con la conexión y la
+				configuración de la base de datos utilizada en el proyecto, como el
+				nombre del servidor de base de datos, el puerto, el nombre de la
+				base de datos, el nombre de usuario y la contraseña.</p>
+
+			<p>3. Archivo de configuración del servidor de aplicaciones: Este
+				archivo contiene la configuración del servidor de aplicaciones en el
+				que se desplegará la aplicación Java legacy, como la configuración
+				del pool de conexiones, la configuración de seguridad, la
+				configuración de cache, etc.</p>
+
+			<p>4. Archivo de configuración de seguridad: Este archivo
+				contiene la configuración relacionada con la seguridad de la
+				aplicación, como la configuración de autenticación, la configuración
+				de autorización, la configuración de permisos, etc.</p>
+
+			<p>5. Archivo de configuración de log: Este archivo contiene la
+				configuración del registro de eventos de la aplicación, como la
+				configuración de los niveles de registro, los destinos de registro,
+				los formatos de registro, etc.</p>
+
+			<p>6. Archivo de configuración de internacionalización: Este
+				archivo contiene la configuración relacionada con la
+				internacionalización y localización de la aplicación, como la
+				configuración de idiomas, los mensajes de error, los mensajes de
+				éxito, etc.</p>
+
+			<p>7. Archivo de configuración de propiedades: Este archivo
+				contiene configuraciones de propiedades específicas de la
+				aplicación, como URLs de servicios externos, claves de acceso a
+				APIs, configuraciones de correo electrónico, etc.</p>
+
+			<p>8. Archivo de configuración de seguridad: Este archivo
+				contiene la configuración relacionada con la seguridad de la
+				aplicación, como la configuración de autenticación, la configuración
+				de autorización, la configuración de permisos, etc.</p>
+
+			<p>9. Archivo de configuración de caching: Este archivo contiene
+				la configuración relacionada con la gestión de cache en la
+				aplicación, como la configuración de cache de datos, la
+				configuración de cache de consultas, etc.</p>
+
+			<p>10. Archivo de configuración de integración: Este archivo
+				contiene la configuración de integración con otros sistemas o
+				servicios, como la configuración de servicios web, la configuración
+				de servicios de mensajería, la configuración de servicios de
+				terceros, etc.</p>
+
+			<p>11. Archivo de configuración de propiedades de despliegue:
+				Este archivo contiene configuraciones específicas para el despliegue
+				de la aplicación en un entorno de producción, como configuraciones
+				de recursos de servidor, configuraciones de balanceo de carga,
+				configuraciones de seguridad, etc.</p>
+
+			<p>Estos son algunos ejemplos de los archivos de configuración
+				que se pueden encontrar en un proyecto Java legacy. Es importante
+				comprender y analizar adecuadamente la configuración del proyecto y
+				sus archivos de configuración para asegurar el correcto
+				funcionamiento de la aplicación y realizar las actualizaciones o
+				ajustes necesarios en caso de ser requeridos.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Investigación de
+				bases de datos y esquemas de datos utilizados</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>En un proyecto Java legacy, es común encontrar diferentes
+				tipos de bases de datos y esquemas de datos utilizados, dependiendo
+				de los requisitos y necesidades específicas de la aplicación.
+				Algunos ejemplos de bases de datos y esquemas de datos utilizados en
+				proyectos Java legacy son:</p>
+
+			<p>1. Bases de datos relacionales: Las bases de datos
+				relacionales son un tipo de bases de datos que organizan la
+				información en tablas con filas y columnas, y utilizan claves
+				primarias y foráneas para establecer relaciones entre las tablas.
+				Algunos ejemplos de bases de datos relacionales utilizadas en
+				proyectos Java legacy son MySQL, Oracle, Microsoft SQL Server,
+				PostgreSQL, entre otros. Los esquemas de datos utilizados en bases
+				de datos relacionales son generalmente diseñados utilizando el
+				modelo Entidad-Relación (ER), donde se definen las entidades
+				(tablas) y sus atributos, así como las relaciones entre las
+				entidades.</p>
+
+			<p>2. Bases de datos NoSQL: Las bases de datos NoSQL (Not Only
+				SQL) son un tipo de bases de datos que no utilizan el modelo
+				relacional y no utilizan tablas con filas y columnas. En su lugar,
+				utilizan diferentes modelos de datos como documentos, columnas,
+				grafos o clave-valor para almacenar y organizar la información.
+				Algunos ejemplos de bases de datos NoSQL utilizadas en proyectos
+				Java legacy son MongoDB, Cassandra, Redis, Amazon DynamoDB, entre
+				otros. Los esquemas de datos utilizados en bases de datos NoSQL son
+				generalmente más flexibles y se adaptan a los requerimientos
+				específicos de la aplicación.</p>
+
+			<p>3. Bases de datos embebidas: Las bases de datos embebidas son
+				bases de datos que se integran directamente en la aplicación y se
+				distribuyen como parte del software. Estas bases de datos se
+				ejecutan en la misma máquina donde se encuentra la aplicación y no
+				requieren un servidor de base de datos externo. Algunos ejemplos de
+				bases de datos embebidas utilizadas en proyectos Java legacy son H2,
+				SQLite, Apache Derby, entre otros. Los esquemas de datos utilizados
+				en bases de datos embebidas suelen ser simples y se definen
+				directamente en el código de la aplicación.</p>
+
+			<p>En cuanto a los esquemas de datos utilizados en proyectos Java
+				legacy, estos varían dependiendo del tipo de base de datos
+				utilizada. En bases de datos relacionales, se utilizan esquemas de
+				datos que siguen el modelo Entidad-Relación (ER) o el modelo
+				Relacional. En bases de datos NoSQL, los esquemas de datos son más
+				flexibles y se adaptan al modelo de datos utilizado, como
+				documentos, columnas, grafos o clave-valor. En bases de datos
+				embebidas, los esquemas de datos suelen ser más simples y se definen
+				directamente en el código de la aplicación.</p>
+
+			<p>Es importante tener en cuenta que el análisis de bases de
+				datos y esquemas de datos utilizados en un proyecto Java legacy es
+				fundamental para entender cómo se organiza y se accede a la
+				información en la aplicación, y para realizar modificaciones o
+				actualizaciones en la estructura de datos.</p>
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estudio de la
+				lógica de negocio del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El estudio de la lógica de negocio en un proyecto Java legacy
+				implica analizar cómo se procesa la información y se gestionan las
+				reglas y procesos de negocio en la aplicación. Algunos aspectos a
+				tener en cuenta en este estudio son:</p>
+
+			<p>1. Reglas de negocio: Las reglas de negocio son las reglas y
+				políticas que rigen el comportamiento y la lógica de la aplicación.
+				Estas reglas pueden estar codificadas directamente en el código de
+				la aplicación, o pueden estar definidas en archivos de
+				configuración, bases de datos o en otros componentes del sistema. El
+				estudio de la lógica de negocio implica analizar cómo se definen,
+				gestionan y aplican estas reglas en el proyecto Java legacy.</p>
+
+			<p>2. Procesos de negocio: Los procesos de negocio son las
+				secuencias de actividades que se realizan para llevar a cabo una
+				tarea o cumplir un objetivo específico en la aplicación. El estudio
+				de la lógica de negocio implica analizar cómo se diseñan,
+				implementan y gestionan estos procesos en el proyecto Java legacy,
+				incluyendo la identificación de posibles mejoras o optimizaciones en
+				los flujos de trabajo existentes.</p>
+
+			<p>3. Modelos de datos: Los modelos de datos son las
+				representaciones estructuradas de la información utilizada por la
+				aplicación. El estudio de la lógica de negocio implica analizar cómo
+				se definen, gestionan y utilizan los modelos de datos en el proyecto
+				Java legacy, incluyendo la identificación de posibles
+				inconsistencias o redundancias en los datos.</p>
+
+			<p>4. Interacciones entre componentes: El estudio de la lógica de
+				negocio también implica analizar cómo interactúan los diferentes
+				componentes de la aplicación, como módulos, clases, servicios, APIs
+				u otros, para llevar a cabo las operaciones de negocio. Esto incluye
+				identificar dependencias, flujos de información y posibles puntos de
+				mejora en las interacciones entre componentes.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de los
+				flujos de trabajo y procesos del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El análisis de los flujos de trabajo y procesos del proyecto
+				en un proyecto Java legacy implica examinar cómo se organizan y
+				gestionan las tareas y procesos en la aplicación. Algunos aspectos a
+				tener en cuenta en este análisis son:</p>
+
+			<p>1. Identificación de flujos de trabajo: Los flujos de trabajo
+				son las secuencias de tareas y actividades que se realizan para
+				llevar a cabo una funcionalidad o un proceso específico en la
+				aplicación. El análisis de flujos de trabajo implica identificar y
+				comprender los diferentes flujos de trabajo existentes en el
+				proyecto Java legacy, incluyendo cómo se inician, cómo se
+				desarrollan y cómo se finalizan.</p>
+
+			<p>2. Análisis de procesos: Los procesos son las actividades
+				organizadas y estructuradas que se realizan para llevar a cabo una
+				tarea o cumplir un objetivo en la aplicación. El análisis de
+				procesos implica examinar cómo se diseñan, implementan y gestionan
+				los procesos en el proyecto Java legacy, incluyendo la
+				identificación de posibles ineficiencias, cuellos de botella o áreas
+				de mejora en los procesos existentes.</p>
+
+			<p>3. Identificación de puntos de mejora: El análisis de flujos
+				de trabajo y procesos también implica identificar posibles puntos de
+				mejora en la organización, secuencia o ejecución de las tareas y
+				procesos del proyecto Java legacy. Esto puede incluir la
+				identificación de redundancias, procesos innecesarios, falta de
+				automatización, o cualquier otra oportunidad para optimizar y
+				mejorar la eficiencia de los flujos de trabajo y procesos
+				existentes.</p>
+
+			<p>4. Propuestas de mejora: Con base en el análisis de los flujos
+				de trabajo y procesos, se pueden hacer propuestas de mejora para
+				optimizar la gestión de tareas y procesos en el proyecto Java
+				legacy. Esto puede incluir la sugerencia de cambios en la
+				organización, automatización de tareas, simplificación de procesos o
+				cualquier otra acción que pueda mejorar la eficiencia y efectividad
+				del flujo de trabajo y procesos en la aplicación.</p>
+
+			<p>El análisis de los flujos de trabajo y procesos en un proyecto
+				Java legacy es fundamental para entender cómo se gestionan las
+				tareas y procesos en la aplicación, identificar oportunidades de
+				mejora y proponer soluciones para optimizar la gestión de los
+				mismos.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Identificación
+				de los módulos o componentes principales del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>En un proyecto Java legacy, los módulos o componentes
+				principales son las partes fundamentales de la aplicación que se
+				encargan de llevar a cabo funcionalidades específicas. Algunos
+				aspectos a tener en cuenta en la identificación de los módulos o
+				componentes principales son:</p>
+
+			<p>Aquí puedes describir los módulos o componentes principales
+				del proyecto, como por ejemplo:</p>
+			<p>- Módulo de gestión de usuarios</p>
+			<p>- Módulo de procesamiento de pedidos</p>
+			<p>- Módulo de generación de informes</p>
+			<p>- Módulo de integración con sistemas externos</p>
+			<p>- Módulo de interfaz de usuario, etc.</p>
+
+			<p>Es importante identificar claramente los módulos o componentes
+				principales del proyecto, ya que esto ayudará a comprender la
+				estructura y organización del código, así como a realizar un
+				adecuado mantenimiento y evolución del proyecto a lo largo del
+				tiempo.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estudio de la
+				seguridad y gestión de permisos del proyecto)</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>La seguridad y la gestión de permisos son aspectos críticos en
+				cualquier proyecto de software, incluyendo los proyectos Java
+				legacy. Un análisis detallado de la seguridad del proyecto implica
+				identificar y evaluar posibles vulnerabilidades y brechas de
+				seguridad en el código, la configuración y el diseño del sistema.
+				Además, la gestión de permisos se refiere a cómo se controla el
+				acceso a los diferentes módulos, componentes y recursos del
+				proyecto, asegurando que solo los usuarios autorizados tengan los
+				privilegios necesarios para realizar acciones específicas.</p>
+
+			<p>El estudio de la seguridad y gestión de permisos del proyecto
+				puede incluir los siguientes elementos:</p>
+
+			<p>1. Análisis de la autenticación y autorización: Revisión de
+				cómo se manejan las credenciales de los usuarios, cómo se autentican
+				y cómo se gestionan los permisos de acceso en el sistema.</p>
+
+			<p>2. Evaluación de vulnerabilidades: Identificación y evaluación
+				de posibles vulnerabilidades en el código, configuración y diseño
+				del proyecto, mediante herramientas de análisis estático y dinámico
+				de seguridad.</p>
+
+			<p>3. Análisis de políticas de seguridad: Revisión de las
+				políticas de seguridad implementadas en el proyecto, como políticas
+				de contraseñas, políticas de bloqueo de cuentas, y otras políticas
+				de seguridad relevantes.</p>
+
+			<p>4. Revisión de controles de acceso: Análisis de cómo se
+				manejan los controles de acceso a nivel de módulos, componentes y
+				recursos del proyecto, para asegurar que solo los usuarios
+				autorizados tengan acceso a las funcionalidades y datos
+				correspondientes.</p>
+
+			<p>5. Evaluación de roles y privilegios: Revisión de los roles y
+				privilegios asignados a los usuarios del proyecto, para asegurar que
+				se asignen de forma adecuada y que sean acorde con las necesidades y
+				responsabilidades de cada usuario.</p>
+
+			<p>6. Análisis de auditoría y seguimiento: Evaluación de cómo se
+				registran y auditan las acciones de los usuarios en el proyecto,
+				para identificar posibles brechas de seguridad y detectar
+				actividades sospechosas.</p>
+
+			<p>7. Revisión de seguridad en comunicaciones: Análisis de cómo
+				se maneja la seguridad en las comunicaciones entre los diferentes
+				componentes del proyecto, como la encriptación de datos en tránsito
+				y otras medidas de seguridad en la transmisión de datos.</p>
+
+			<p>8. Evaluación de parches y actualizaciones: Revisión de cómo
+				se gestionan los parches y actualizaciones de seguridad en el
+				proyecto, para asegurar que se mantenga protegido contra posibles
+				vulnerabilidades conocidas.</p>
+
+			<p>9. Análisis de seguridad en entorno de producción: Evaluación
+				de las medidas de seguridad implementadas en el entorno de
+				producción del proyecto, como la configuración de firewalls, el
+				monitoreo de seguridad y otras medidas de seguridad a nivel de
+				infraestructura.</p>
+
+			<p>10. Revisión de políticas de respaldo y recuperación: Análisis
+				de las políticas de respaldo y recuperación implementadas en el
+				proyecto, para asegurar que se tenga un plan adecuado de copias de
+				seguridad y recuperación en caso de incidentes de seguridad.</p>
+
+			<p>11. Evaluación de cumplimiento normativo: Revisión de cómo se
+				cumple con las normativas y regulaciones aplicables en el proyecto,
+				como regulaciones de protección de datos, regulaciones de seguridad
+				de la información, entre otras.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de los
+				servicios externos utilizados por el proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El proyecto Java legacy puede depender de servicios externos
+				para diversas funcionalidades, como integraciones con sistemas
+				externos, acceso a bases de datos externas, servicios de terceros,
+				entre otros. Un análisis detallado de los servicios externos
+				utilizados por el proyecto implica identificar y evaluar los
+				servicios utilizados, su confiabilidad, seguridad y compatibilidad
+				con el proyecto.</p>
+
+			<p>El análisis de los servicios externos utilizados por el
+				proyecto puede incluir los siguientes elementos:</p>
+
+			<p>1. Identificación de servicios externos: Revisión de todos los
+				servicios externos utilizados por el proyecto, incluyendo servicios
+				de terceros, bases de datos externas, APIs de servicios web, entre
+				otros.</p>
+
+			<p>2. Evaluación de confiabilidad: Evaluación de la confiabilidad
+				de los servicios externos utilizados, incluyendo su disponibilidad,
+				rendimiento y estabilidad. Esto puede implicar revisar acuerdos de
+				nivel de servicio (SLAs) y monitoreo de la disponibilidad de los
+				servicios.</p>
+
+			<p>3. Análisis de seguridad: Evaluación de la seguridad de los
+				servicios externos utilizados, incluyendo la autenticación,
+				autorización, encriptación y otras medidas de seguridad
+				implementadas por los proveedores de los servicios.</p>
+
+			<p>4. Compatibilidad con el proyecto: Revisión de la
+				compatibilidad de los servicios externos utilizados con el proyecto
+				Java legacy, incluyendo la compatibilidad de versiones, integración
+				con las tecnologías utilizadas en el proyecto, y la capacidad de los
+				servicios para cumplir con los requisitos funcionales del proyecto.</p>
+
+			<p>5. Evaluación de costos: Análisis de los costos asociados con
+				los servicios externos utilizados por el proyecto, incluyendo los
+				costos de suscripción, mantenimiento, licencias, y otros costos
+				asociados. Esto puede implicar revisar los contratos y acuerdos con
+				los proveedores de los servicios.</p>
+
+			<p>6. Análisis de alternativas: Identificación y evaluación de
+				posibles alternativas a los servicios externos utilizados, en caso
+				de que se encuentren limitaciones o problemas con los servicios
+				actuales. Esto puede implicar investigar otros proveedores de
+				servicios similares, evaluar opciones de software de código abierto
+				o considerar la posibilidad de desarrollar funcionalidades
+				internamente en lugar de depender de servicios externos.</p>
+
+			<p>7. Gestión de riesgos: Evaluación de los riesgos asociados con
+				los servicios externos utilizados por el proyecto, incluyendo
+				posibles riesgos de seguridad, confiabilidad, compatibilidad y
+				costos. Esto puede implicar identificar posibles mitigaciones y
+				planes de contingencia en caso de que ocurran problemas con los
+				servicios externos.</p>
+
+			<p>El análisis de los servicios externos utilizados por el
+				proyecto es importante para asegurar que se estén utilizando
+				servicios confiables, seguros y compatibles con el proyecto Java
+				legacy, y para gestionar adecuadamente los riesgos asociados con la
+				dependencia de servicios externos en el proyecto.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="" id="h1-texto-enunciado">Análisis de los logs y
+				registros de actividad del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El análisis de los logs y registros de actividad del proyecto
+				Java legacy es una parte importante del proceso de monitoreo y
+				seguimiento del proyecto. Los logs y registros de actividad son
+				registros detallados de eventos y actividades que ocurren en el
+				proyecto, como registros de errores, eventos de sistema,
+				transacciones realizadas, entre otros. El análisis de los logs y
+				registros de actividad puede ayudar a identificar problemas, errores
+				o comportamientos inesperados en el proyecto, así como a mejorar la
+				seguridad, rendimiento y confiabilidad del mismo.</p>
+
+			<p>El análisis de los logs y registros de actividad del proyecto
+				puede incluir los siguientes elementos:</p>
+
+			<p>1. Identificación y recopilación de logs y registros:
+				Identificación de los logs y registros de actividad generados por el
+				proyecto Java legacy, incluyendo logs de aplicaciones, logs de base
+				de datos, registros de eventos del sistema, registros de
+				transacciones, y otros registros relevantes.</p>
+
+			<p>2. Análisis de patrones y tendencias: Análisis de patrones y
+				tendencias en los logs y registros de actividad, identificando
+				comportamientos inusuales, errores recurrentes, o eventos fuera de
+				lo normal. Esto puede implicar el uso de herramientas de análisis de
+				logs y técnicas de minería de datos para identificar patrones
+				ocultos o tendencias emergentes.</p>
+
+			<p>3. Identificación de errores y problemas: Identificación de
+				errores, problemas o eventos adversos en los logs y registros de
+				actividad del proyecto. Esto puede implicar la búsqueda de mensajes
+				de error, códigos de error, o indicadores de problemas en los
+				registros de actividad.</p>
+
+			<p>4. Seguimiento de actividades críticas: Seguimiento de
+				actividades críticas del proyecto a través de los logs y registros
+				de actividad, como transacciones de alto valor, cambios de
+				configuración, o acciones de administración del sistema. Esto puede
+				ayudar a detectar posibles errores o actividades no autorizadas en
+				el proyecto.</p>
+
+			<p>5. Mejora de la seguridad y rendimiento: Utilización de los
+				logs y registros de actividad para identificar posibles brechas de
+				seguridad, vulnerabilidades o debilidades en el proyecto Java
+				legacy, y tomar acciones correctivas para mejorar la seguridad y
+				rendimiento del proyecto.</p>
+
+			<p>6. Cumplimiento de regulaciones y normativas: Análisis de los
+				logs y registros de actividad del proyecto para asegurar el
+				cumplimiento de regulaciones y normativas aplicables, como
+				regulaciones de privacidad, seguridad de datos, cumplimiento de
+				industria, entre otros.</p>
+
+			<p>7. Generación de reportes y alertas: Generación de reportes y
+				alertas basados en los logs y registros de actividad del proyecto,
+				para mantener a los interesados informados sobre la salud y estado
+				del proyecto, así como para tomar acciones preventivas o correctivas
+				en caso de eventos adversos.</p>
+
+			<p>El análisis de los logs y registros de actividad del proyecto
+				Java legacy es esencial para mantener un monitoreo eficiente del
+				proyecto, identificar problemas o errores, mejorar la seguridad y
+				rendimiento, y asegurar el cumplimiento de regulaciones y
+				normativas.</p>
+
+
+
+
+
+		</div>
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estudio de las
+				herramientas de construcción y despliegue utilizadas</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>El estudio de las herramientas de construcción y despliegue
+				utilizadas en el proyecto Java legacy es importante para comprender
+				y analizar el proceso de construcción, empaquetado y despliegue del
+				software en el entorno de desarrollo y producción. Las herramientas
+				de construcción y despliegue son elementos clave en el ciclo de vida
+				del desarrollo de software, ya que permiten automatizar tareas,
+				gestionar dependencias, empaquetar el software en forma de
+				artefactos ejecutables, y desplegarlos en los ambientes
+				correspondientes.</p>
+
+			<p>El estudio de las herramientas de construcción y despliegue
+				puede incluir los siguientes aspectos:</p>
+
+			<p>1. Herramientas de construcción: Identificación y análisis de
+				las herramientas utilizadas para construir el proyecto Java legacy,
+				como Maven, Ant, Gradle, entre otras. Esto puede incluir la
+				configuración de los archivos de construcción (como pom.xml,
+				build.xml, build.gradle) y la comprensión de los comandos y
+				parámetros utilizados en el proceso de construcción del software.</p>
+
+			<p>2. Herramientas de empaquetado: Identificación y análisis de
+				las herramientas utilizadas para empaquetar el software en forma de
+				artefactos ejecutables, como archivos JAR, WAR o EAR. Esto puede
+				incluir el uso de herramientas como Jar, War, Ear, o herramientas de
+				empaquetado específicas del servidor de aplicaciones utilizado en el
+				proyecto.</p>
+
+			<p>3. Herramientas de despliegue: Identificación y análisis de
+				las herramientas utilizadas para desplegar el software en los
+				ambientes de producción, como servidores de aplicaciones,
+				contenedores de aplicaciones, o plataformas de despliegue en la
+				nube. Esto puede incluir el uso de herramientas como Docker,
+				Kubernetes, Jenkins, entre otras.</p>
+
+			<p>4. Automatización de tareas: Análisis de la automatización de
+				tareas relacionadas con la construcción y despliegue del proyecto
+				Java legacy, como la ejecución de pruebas automatizadas, la
+				generación de informes, la gestión de dependencias, la actualización
+				de versiones, entre otras. Esto puede incluir la configuración de
+				scripts, plugins o complementos en las herramientas de construcción
+				y despliegue utilizadas.</p>
+
+			<p>5. Integración con sistemas de control de versiones: Análisis
+				de la integración de las herramientas de construcción y despliegue
+				con sistemas de control de versiones utilizados en el proyecto, como
+				Git, SVN, o Mercurial. Esto puede incluir la configuración de
+				acciones automáticas de construcción y despliegue en respuesta a
+				cambios en el repositorio de código fuente.</p>
+
+			<p>El estudio de las herramientas de construcción y despliegue
+				utilizadas en el proyecto Java legacy es esencial para comprender y
+				optimizar el proceso de desarrollo, construcción y despliegue del
+				software, garantizando una entrega eficiente y confiable del
+				producto final en los ambientes de producción.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Identificación
+				de los puntos de entrada y salida del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>La identificación de los puntos de entrada y salida del
+				proyecto es una parte importante del análisis del software Java
+				legacy, ya que permite comprender cómo los usuarios interactúan con
+				el sistema y cómo se integra con otros sistemas o servicios
+				externos. Los puntos de entrada son aquellos lugares en los que los
+				usuarios o sistemas externos ingresan datos o solicitan acciones al
+				sistema, mientras que los puntos de salida son aquellos lugares en
+				los que el sistema produce resultados o envía datos a otros sistemas
+				o servicios externos.</p>
+
+			<p>La identificación de los puntos de entrada y salida puede
+				incluir los siguientes aspectos:</p>
+
+			<p>1. Interfaces de usuario: Identificación y análisis de las
+				interfaces de usuario utilizadas en el proyecto, como interfaces
+				gráficas de usuario (GUI), interfaces de línea de comandos (CLI),
+				interfaces web, servicios web, APIs, entre otras. Esto puede incluir
+				el análisis de los componentes de interfaz de usuario utilizados,
+				las acciones que los usuarios pueden realizar a través de la
+				interfaz, y los datos que se ingresan o se obtienen a través de
+				dichas interfaces.</p>
+
+			<p>2. Integración con sistemas externos: Identificación y
+				análisis de la integración del sistema Java legacy con otros
+				sistemas o servicios externos, como bases de datos, servicios web,
+				sistemas de terceros, entre otros. Esto puede incluir el análisis de
+				las interfaces utilizadas para la integración, los formatos de datos
+				intercambiados, los protocolos de comunicación, y las acciones que
+				se realizan en los sistemas externos.</p>
+
+			<p>3. Procesamiento de datos: Identificación y análisis de los
+				procesos de procesamiento de datos en el proyecto Java legacy, como
+				la lectura, escritura, manipulación, transformación y validación de
+				datos. Esto puede incluir el análisis de los componentes o módulos
+				del sistema que realizan estas tareas, los flujos de datos entre los
+				diferentes componentes, y los resultados que se producen como salida
+				de estos procesos.</p>
+
+			<p>4. Generación de informes: Identificación y análisis de los
+				procesos de generación de informes o reportes en el proyecto, como
+				la generación de informes de salida, archivos de registro, o
+				notificaciones. Esto puede incluir el análisis de los componentes o
+				módulos del sistema encargados de generar los informes, los formatos
+				de salida de los informes, y las acciones que se realizan con los
+				informes generados.</p>
+
+			<p>La identificación de los puntos de entrada y salida del
+				proyecto es fundamental para entender cómo el sistema interactúa con
+				los usuarios, otros sistemas o servicios externos, y cómo se
+				procesan los datos dentro del sistema. Esto permite optimizar el
+				diseño y funcionamiento del sistema, garantizando una correcta
+				interacción con el entorno y la obtención de resultados esperados.</p>
+
+
+
+		</div>
+
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de los
+				procesos de despliegue y configuración del entorno</h1>
+
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>El análisis de los procesos de despliegue y configuración del
+				entorno es una parte crítica en el análisis de un proyecto de
+				software Java legacy, ya que permite comprender cómo el sistema es
+				implementado y configurado en un entorno de producción o de
+				ejecución. Esto incluye la identificación de los pasos y
+				procedimientos necesarios para llevar a cabo el despliegue del
+				sistema en un ambiente real, así como la configuración de los
+				elementos y recursos necesarios para su correcto funcionamiento.</p>
+
+			<p>El análisis de los procesos de despliegue y configuración del
+				entorno puede incluir los siguientes aspectos:</p>
+
+			<p>1. Despliegue del software: Identificación y análisis de los
+				pasos y procedimientos necesarios para llevar a cabo el despliegue
+				del software Java legacy en un entorno de producción o de ejecución.
+				Esto puede incluir la instalación de las dependencias del sistema,
+				la configuración de los servidores de aplicaciones o servidores web,
+				la configuración de bases de datos u otros recursos necesarios, y la
+				implementación del software en sí.</p>
+
+			<p>2. Configuración del entorno: Identificación y análisis de los
+				procesos de configuración del entorno en el cual el software Java
+				legacy será desplegado y ejecutado. Esto puede incluir la
+				configuración de variables de entorno, la configuración de archivos
+				de configuración del sistema, la configuración de parámetros de
+				seguridad, la configuración de permisos de acceso a recursos del
+				sistema, y otros aspectos necesarios para el funcionamiento correcto
+				del sistema.</p>
+
+			<p>3. Gestión de versiones: Identificación y análisis de los
+				procesos de gestión de versiones del software Java legacy,
+				incluyendo el control de versiones, la gestión de ramas (branches) y
+				etiquetas (tags), y los procesos de compilación y empaquetado del
+				software. Esto puede incluir el análisis de las herramientas de
+				control de versiones utilizadas, las políticas de gestión de
+				versiones, y los procedimientos para realizar actualizaciones o
+				parches del software en producción.</p>
+
+			<p>4. Automatización de despliegue: Identificación y análisis de
+				las herramientas o procesos de automatización utilizados para llevar
+				a cabo el despliegue y configuración del entorno del software Java
+				legacy. Esto puede incluir el análisis de herramientas de
+				automatización de infraestructura como Ansible, Chef o Puppet, así
+				como herramientas de automatización de despliegue como Jenkins,
+				Travis CI, o herramientas de orquestación de contenedores como
+				Docker o Kubernetes.</p>
+
+			<p>El análisis de los procesos de despliegue y configuración del
+				entorno es esencial para asegurar un despliegue correcto y eficiente
+				del software Java legacy en un entorno de producción o de ejecución.
+				Esto permite minimizar errores, optimizar la configuración del
+				sistema y asegurar un funcionamiento adecuado del software en
+				producción.</p>
+
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estudio de los
+				procesos de monitoreo y mantenimiento del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>El estudio de los procesos de monitoreo y mantenimiento del
+				proyecto es una parte clave en el análisis de un proyecto de
+				software Java legacy, ya que permite comprender cómo el sistema es
+				monitoreado y mantenido en producción para asegurar su correcto
+				funcionamiento y rendimiento. Esto incluye la identificación y
+				análisis de los procesos y herramientas utilizadas para monitorear
+				el sistema en tiempo real, así como los procedimientos de
+				mantenimiento para asegurar su estabilidad y eficiencia a lo largo
+				del tiempo.</p>
+
+			<p>El estudio de los procesos de monitoreo y mantenimiento del
+				proyecto puede incluir los siguientes aspectos:</p>
+
+			<p>1. Monitoreo del sistema: Identificación y análisis de las
+				herramientas y procesos utilizados para monitorear el sistema Java
+				legacy en tiempo real. Esto puede incluir el monitoreo de recursos
+				del sistema, como el uso de CPU, memoria, y almacenamiento, así como
+				el monitoreo de servicios o componentes del sistema, como bases de
+				datos, servidores de aplicaciones, o servicios externos utilizados
+				por el proyecto. También puede incluir la configuración de alertas y
+				notificaciones para detectar y resolver problemas en el sistema de
+				manera proactiva.</p>
+
+			<p>2. Mantenimiento del sistema: Identificación y análisis de los
+				procedimientos y prácticas de mantenimiento utilizados para asegurar
+				la estabilidad y rendimiento del sistema Java legacy a lo largo del
+				tiempo. Esto puede incluir la aplicación de actualizaciones de
+				seguridad y parches, la revisión y optimización de la configuración
+				del sistema, la gestión de logs y registros de actividad, la
+				limpieza y optimización de bases de datos, y otros procedimientos de
+				mantenimiento preventivo y correctivo.</p>
+
+			<p>3. Gestión de incidencias: Identificación y análisis de los
+				procesos y herramientas utilizados para gestionar las incidencias o
+				problemas detectados en el sistema Java legacy. Esto puede incluir
+				la identificación, registro y seguimiento de incidencias, la
+				asignación y seguimiento de tareas para la resolución de
+				incidencias, la comunicación con los equipos de desarrollo, pruebas
+				y operaciones, y la generación de informes de seguimiento y análisis
+				de incidencias.</p>
+
+			<p>4. Planes de contingencia: Identificación y análisis de los
+				planes de contingencia o planes de recuperación ante fallos
+				utilizados en el proyecto Java legacy. Esto puede incluir la
+				definición de procedimientos y políticas para hacer frente a
+				situaciones de emergencia, como caídas del sistema, pérdida de
+				datos, o problemas de seguridad. También puede incluir la
+				implementación de respaldos y copias de seguridad del sistema, así
+				como la definición de procedimientos de restauración y recuperación
+				de datos en caso de contingencia.</p>
+
+			<p>El estudio de los procesos de monitoreo y mantenimiento del
+				proyecto es esencial para asegurar un funcionamiento estable y
+				eficiente del sistema Java legacy en producción, así como para
+				detectar y resolver de manera proactiva problemas que puedan afectar
+				su rendimiento y disponibilidad. Esto permite mantener el sistema en
+				buen estado y garantizar la continuidad del negocio en el entorno de
+				producción.</p>
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Identificación
+				de las áreas de mayor complejidad o riesgo en el proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>La identificación de las áreas de mayor complejidad o riesgo
+				en un proyecto de software Java legacy es un paso importante en el
+				análisis del proyecto, ya que permite identificar aquellas áreas del
+				sistema que pueden presentar mayores desafíos o riesgos en términos
+				de su desarrollo, mantenimiento, rendimiento, seguridad o
+				integración con otros componentes.</p>
+
+			<p>Las áreas de mayor complejidad o riesgo en un proyecto Java
+				legacy pueden variar según la naturaleza y características del
+				proyecto, pero algunas áreas comunes que suelen presentar mayor
+				complejidad o riesgo son:</p>
+
+			<p>1. Arquitectura del sistema: La arquitectura del sistema puede
+				ser compleja en un proyecto Java legacy, especialmente si se trata
+				de un sistema heredado con múltiples capas, integraciones con
+				sistemas externos, o con una arquitectura monolítica. Identificar y
+				comprender la arquitectura del sistema, así como su diseño y
+				patrones de diseño utilizados, es esencial para entender su
+				complejidad y riesgos asociados.</p>
+
+			<p>2. Integraciones con sistemas externos: Los proyectos Java
+				legacy suelen tener integraciones con sistemas externos, como bases
+				de datos, servicios web, sistemas de terceros, entre otros. Estas
+				integraciones pueden presentar complejidad y riesgos en términos de
+				su diseño, implementación, mantenimiento y seguridad. Identificar y
+				comprender las integraciones con sistemas externos es importante
+				para mitigar riesgos asociados a posibles fallos en las
+				integraciones o problemas de seguridad.</p>
+
+			<p>3. Código legado: El código legado en un proyecto Java legacy
+				puede presentar complejidad en términos de su mantenimiento,
+				entendimiento y evolución. El código legado puede estar
+				desactualizado, no seguir mejores prácticas de desarrollo, o tener
+				dependencias obsoletas. Identificar y comprender el código legado es
+				esencial para abordar posibles problemas de mantenimiento y riesgos
+				asociados a la obsolescencia tecnológica.</p>
+
+			<p>4. Seguridad: La seguridad en un proyecto Java legacy es una
+				preocupación importante, ya que los sistemas heredados pueden tener
+				vulnerabilidades conocidas o desconocidas que representan riesgos
+				para la confidencialidad, integridad y disponibilidad de los datos.
+				Identificar y comprender los posibles riesgos de seguridad en el
+				proyecto, como la falta de cifrado, autenticación deficiente o
+				manejo inadecuado de datos sensibles, es esencial para implementar
+				medidas de seguridad adecuadas.</p>
+
+			<p>5. Rendimiento: El rendimiento es otro aspecto crítico en un
+				proyecto Java legacy, ya que sistemas heredados pueden tener
+				problemas de rendimiento debido a la falta de optimizaciones, diseño
+				ineficiente de consultas de bases de datos, o falta de
+				escalabilidad. Identificar y comprender los posibles problemas de
+				rendimiento en el proyecto es importante para implementar mejoras de
+				rendimiento y asegurar un funcionamiento eficiente del sistema.</p>
+
+			<p>La identificación de las áreas de mayor complejidad o riesgo
+				en un proyecto de software Java legacy permite tener una visión
+				clara de los desafíos y riesgos potenciales del proyecto, lo cual es
+				importante para planificar adecuadamente las actividades de
+				desarrollo, mantenimiento y mejora del sistema. Esto ayuda a
+				minimizar los riesgos y asegurar un proyecto exitoso en el largo
+				plazo.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de las
+				decisiones de diseño y compromisos técnicos del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El análisis de las decisiones de diseño y compromisos técnicos
+				en un proyecto de software Java legacy es fundamental para
+				comprender la arquitectura y diseño del sistema, así como los
+				compromisos y decisiones tomadas durante su desarrollo. Estas
+				decisiones y compromisos técnicos pueden tener un impacto
+				significativo en la calidad, mantenibilidad y evolución del
+				proyecto.</p>
+
+			<p>Algunas áreas de análisis en este contexto pueden incluir:</p>
+
+			<p>1. Diseño de la arquitectura del sistema: Se analiza la
+				arquitectura del sistema, incluyendo patrones de diseño utilizados,
+				decisiones de capas de arquitectura, enfoques de modularización,
+				entre otros. Se busca comprender la solidez y adecuación de la
+				arquitectura del sistema, así como posibles compromisos técnicos
+				tomados durante su diseño.</p>
+
+			<p>2. Elección de tecnologías y frameworks: Se analiza la
+				elección de tecnologías y frameworks utilizados en el proyecto, como
+				librerías, APIs, frameworks de desarrollo, herramientas de
+				persistencia de datos, entre otros. Se busca evaluar la adecuación
+				de las tecnologías y frameworks utilizados, así como posibles
+				compromisos técnicos asociados a su elección.</p>
+
+			<p>3. Diseño de bases de datos: Se analiza el diseño de las bases
+				de datos utilizadas en el proyecto, incluyendo decisiones de
+				modelado de datos, estrategias de persistencia, enfoques de
+				indexación, entre otros. Se busca evaluar la eficiencia y robustez
+				del diseño de bases de datos, así como posibles compromisos técnicos
+				en su diseño.</p>
+
+			<p>4. Diseño de interfaces de usuario: Se analiza el diseño de
+				las interfaces de usuario del sistema, incluyendo decisiones de
+				usabilidad, diseño de pantallas, flujos de navegación, entre otros.
+				Se busca evaluar la experiencia del usuario y la adecuación del
+				diseño de las interfaces de usuario, así como posibles compromisos
+				técnicos en su diseño.</p>
+
+			<p>5. Diseño de pruebas y calidad del código: Se analiza el
+				diseño de las pruebas del sistema, incluyendo decisiones de
+				estrategias de pruebas, cobertura de pruebas, enfoques de
+				automatización, entre otros. Se busca evaluar la calidad del código
+				y la eficacia de las pruebas implementadas, así como posibles
+				compromisos técnicos en el diseño de pruebas.</p>
+
+			<p>El análisis de las decisiones de diseño y compromisos técnicos
+				del proyecto permite comprender las bases sobre las cuales se
+				desarrolló el sistema, identificar posibles limitaciones, riesgos y
+				oportunidades de mejora, y tomar decisiones informadas para el
+				desarrollo, mantenimiento y evolución del proyecto. Esto ayuda a
+				asegurar un diseño robusto y eficiente del sistema, y a minimizar
+				los riesgos técnicos en el desarrollo del proyecto.</p>
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estudio de las
+				interacciones con otros sistemas o aplicaciones externas</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En un proyecto de software Java legacy, es común que el
+				sistema interactúe con otros sistemas o aplicaciones externas para
+				el intercambio de datos, servicios o funcionalidades. El estudio de
+				estas interacciones es importante para comprender la integración del
+				sistema con otros entornos, identificar posibles dependencias y
+				riesgos, y asegurar un adecuado funcionamiento del sistema.</p>
+
+			<p>Algunas áreas de estudio en este contexto pueden incluir:</p>
+
+			<p>1. Integración de APIs externas: Se analiza la integración de
+				APIs externas utilizadas por el sistema, como APIs de servicios web,
+				APIs de bases de datos externas, APIs de servicios de terceros,
+				entre otros. Se busca comprender la forma en que el sistema se
+				comunica con estas APIs, los protocolos utilizados, los datos
+				intercambiados y posibles restricciones o limitaciones.</p>
+
+			<p>2. Integración con sistemas legados: Se analiza la integración
+				del sistema con sistemas legados, es decir, sistemas antiguos o
+				heredados utilizados en la organización. Se busca comprender cómo el
+				sistema interactúa con estos sistemas, los formatos de datos
+				utilizados, los procesos de integración implementados y posibles
+				desafíos o problemas asociados a la interoperabilidad.</p>
+
+			<p>3. Intercambio de datos con otras aplicaciones: Se analiza el
+				intercambio de datos con otras aplicaciones externas, ya sea a
+				través de archivos, bases de datos compartidas, servicios de
+				mensajería, entre otros. Se busca comprender cómo se realiza este
+				intercambio de datos, los formatos utilizados, los protocolos de
+				comunicación y posibles errores o inconsistencias en el proceso de
+				intercambio.</p>
+
+			<p>4. Gestión de errores y excepciones en interacciones externas:
+				Se analiza la forma en que el sistema maneja errores y excepciones
+				en las interacciones con otros sistemas o aplicaciones externas. Se
+				busca comprender cómo se manejan los errores de comunicación,
+				errores de datos, errores de autenticación o autorización, y
+				posibles riesgos asociados a la falta de manejo adecuado de errores
+				en las interacciones externas.</p>
+
+			<p>5. Seguridad en las interacciones externas: Se analiza la
+				seguridad implementada en las interacciones con otros sistemas o
+				aplicaciones externas. Se busca comprender los mecanismos de
+				autenticación, autorización, encriptación, y posibles
+				vulnerabilidades o riesgos de seguridad asociados a las
+				interacciones externas.</p>
+
+			<p>El estudio de las interacciones con otros sistemas o
+				aplicaciones externas es esencial para asegurar una adecuada
+				integración del sistema con su entorno y garantizar un correcto
+				funcionamiento del proyecto. Permite identificar posibles
+				dependencias, riesgos, y oportunidades de mejora en las
+				interacciones externas, y tomar decisiones informadas para mejorar
+				la calidad y seguridad del proyecto en su integración con otros
+				sistemas o aplicaciones externas.</p>
+
+
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Investigación de
+				los estándares y convenciones de nomenclatura utilizados</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>En un proyecto de software, es importante mantener una
+				nomenclatura coherente y consistente en el código fuente, bases de
+				datos, archivos, y otros elementos del proyecto. Esto facilita la
+				comprensión y mantenimiento del proyecto, y asegura que el código y
+				otros artefactos sean legibles y comprensibles para todo el equipo
+				de desarrollo. El estudio de los estándares y convenciones de
+				nomenclatura utilizados en el proyecto es fundamental para asegurar
+				que se sigan las mejores prácticas y se mantenga la calidad del
+				código y otros elementos del proyecto.</p>
+
+			<p>Algunas áreas de estudio en este contexto pueden incluir:</p>
+
+			<p>1. Convenciones de nomenclatura en el código fuente: Se
+				investiga la forma en que se nombran las clases, métodos, variables,
+				constantes y otros elementos del código fuente. Se busca comprender
+				las convenciones de nomenclatura utilizadas, como camelCase,
+				PascalCase, snake_case, Hungarian notation, entre otras. También se
+				investiga si se utilizan prefijos o sufijos en los nombres de los
+				elementos, y si se sigue alguna convención específica para el
+				nombramiento de elementos relacionados, como interfaces, clases
+				abstractas, enumeraciones, etc.</p>
+
+			<p>2. Estándares de nomenclatura en bases de datos: Se investiga
+				la forma en que se nombran las tablas, columnas, índices, claves, y
+				otros elementos en la base de datos utilizada en el proyecto. Se
+				busca comprender si se siguen estándares de nomenclatura
+				específicos, como el caso de las tablas y columnas en mayúsculas o
+				minúsculas, el uso de prefijos o sufijos en los nombres, la forma en
+				que se nombran las relaciones entre tablas, entre otros.</p>
+
+			<p>3. Convenciones de nomenclatura en archivos y directorios: Se
+				investiga la forma en que se nombran los archivos y directorios en
+				el proyecto, incluyendo los nombres de archivos fuente, archivos de
+				configuración, archivos de recursos, entre otros. Se busca
+				comprender si se siguen convenciones de nomenclatura específicas,
+				como el uso de mayúsculas, minúsculas, guiones bajos, guiones
+				medios, o algún otro estándar establecido.</p>
+
+			<p>4. Estándares de nomenclatura en interfaces de usuario: Se
+				investiga la forma en que se nombran los elementos de la interfaz de
+				usuario, como botones, etiquetas, campos de entrada, entre otros. Se
+				busca comprender si se siguen estándares de nomenclatura
+				específicos, como el uso de capitalización, el uso de abreviaciones
+				o acrónimos, o algún otro estándar establecido.</p>
+
+			<p>El estudio de los estándares y convenciones de nomenclatura
+				utilizados en el proyecto es esencial para mantener la consistencia
+				y calidad del código y otros elementos del proyecto. Permite
+				asegurar que se sigan las mejores prácticas y se mantenga una
+				nomenclatura coherente en todo el proyecto, lo cual facilita la
+				comprensión, mantenimiento y evolución del proyecto a lo largo del
+				tiempo.</p>
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Análisis de las
+				reglas de negocio y flujos de validación del proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>En cualquier proyecto de software, las reglas de negocio y
+				flujos de validación son elementos fundamentales que determinan el
+				comportamiento y la lógica del sistema. El análisis detallado de
+				estas reglas y flujos es esencial para comprender cómo se procesan
+				los datos y cómo se toman decisiones dentro del proyecto.</p>
+
+			<p>El análisis de las reglas de negocio y flujos de validación
+				del proyecto puede implicar los siguientes pasos:</p>
+
+			<p>1. Identificación de las reglas de negocio: Se identifican y
+				documentan todas las reglas de negocio del proyecto. Estas reglas
+				pueden estar implícitas o explícitas, y pueden estar dispersas en
+				diferentes partes del sistema, como el código fuente, las bases de
+				datos, los archivos de configuración, etc. Se analiza en detalle
+				cada regla de negocio, su propósito, su lógica y su interacción con
+				otros elementos del proyecto.</p>
+
+			<p>2. Análisis de los flujos de validación: Se analizan los
+				flujos de validación del proyecto, que son los procesos o secuencias
+				de validación que se aplican a los datos o inputs del sistema. Esto
+				puede incluir la validación de campos, la verificación de formatos,
+				la validación de reglas de negocio, entre otros. Se identifican y
+				documentan todos los flujos de validación existentes, incluyendo su
+				lógica, su secuencia y su impacto en el funcionamiento del sistema.</p>
+
+			<p>3. Evaluación de la coherencia y consistencia de las reglas de
+				negocio y flujos de validación: Se evalúa la coherencia y
+				consistencia de las reglas de negocio y flujos de validación
+				identificados. Esto implica asegurarse de que no haya reglas
+				contradictorias, que no se omita ninguna validación necesaria, y que
+				los flujos de validación estén correctamente implementados. Se busca
+				identificar posibles conflictos, redundancias o ambigüedades en las
+				reglas de negocio y flujos de validación, y se proponen soluciones
+				para resolverlos.</p>
+
+			<p>4. Documentación y comunicación de las reglas de negocio y
+				flujos de validación: Se documenta y comunica de manera clara y
+				concisa todas las reglas de negocio y flujos de validación
+				identificados. Esto puede incluir la creación de diagramas,
+				documentos, manuales, o cualquier otra forma de documentación que
+				facilite la comprensión y utilización de las reglas de negocio y
+				flujos de validación por parte del equipo de desarrollo, de los
+				usuarios del sistema, y de otros stakeholders del proyecto.</p>
+
+			<p>El análisis detallado de las reglas de negocio y flujos de
+				validación del proyecto es esencial para garantizar que el sistema
+				funcione correctamente, cumpla con los requisitos del negocio, y se
+				ajuste a las necesidades del proyecto. Permite identificar posibles
+				errores, inconsistencias o deficiencias en las reglas de negocio y
+				flujos de validación, y proponer soluciones para corregirlos y
+				mejorar la calidad y eficiencia del sistema.</p>
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estudio de las
+				actualizaciones y parches aplicados al proyecto</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>El estudio de las actualizaciones y parches aplicados al
+				proyecto es una parte importante del mantenimiento y gestión de un
+				sistema de software. Durante la vida útil de un proyecto, es común
+				que se realicen actualizaciones y se apliquen parches para corregir
+				errores, mejorar la funcionalidad, actualizar tecnologías o cumplir
+				con requisitos de seguridad. El estudio de estas actualizaciones y
+				parches implica los siguientes pasos:</p>
+
+			<p>1. Identificación de las actualizaciones y parches aplicados:
+				Se identifican y documentan todas las actualizaciones y parches que
+				se han aplicado al proyecto. Esto puede incluir actualizaciones de
+				software, librerías, plugins, bases de datos u otros componentes del
+				sistema. Se registra la versión anterior y la versión actualizada,
+				así como la fecha de aplicación y el motivo de la actualización o
+				parche.</p>
+
+			<p>2. Análisis de los cambios introducidos: Se analizan los
+				cambios introducidos por las actualizaciones y parches aplicados.
+				Esto implica revisar la documentación proporcionada por los
+				proveedores de software o desarrolladores, analizar los registros de
+				cambios o realizar pruebas de funcionalidad y rendimiento para
+				identificar las modificaciones realizadas en el sistema.</p>
+
+			<p>3. Evaluación del impacto en el sistema: Se evalúa el impacto
+				de las actualizaciones y parches en el sistema. Esto implica
+				identificar posibles efectos colaterales, conflictos con otras
+				funcionalidades del sistema, o cambios en el comportamiento del
+				software. Se evalúa la compatibilidad de las actualizaciones y
+				parches con el resto del sistema y se proponen soluciones en caso de
+				encontrar incompatibilidades.</p>
+
+			<p>4. Verificación de la eficacia de las actualizaciones y
+				parches: Se verifica la eficacia de las actualizaciones y parches
+				aplicados. Esto implica realizar pruebas de funcionalidad y
+				rendimiento para asegurarse de que los errores hayan sido
+				corregidos, las mejoras hayan sido implementadas correctamente y los
+				requisitos de seguridad hayan sido cumplidos.</p>
+
+			<p>5. Documentación y comunicación de las actualizaciones y
+				parches: Se documenta y comunica de manera clara y concisa todas las
+				actualizaciones y parches aplicados al proyecto. Esto puede incluir
+				la actualización de la documentación del proyecto, la comunicación a
+				los miembros del equipo de desarrollo y a los usuarios del sistema
+				sobre las actualizaciones realizadas, y la generación de informes de
+				seguimiento y auditoría.</p>
+
+			<p>El estudio de las actualizaciones y parches aplicados al
+				proyecto es esencial para mantener el sistema actualizado, seguro y
+				funcionando correctamente. Permite identificar posibles problemas
+				causados por las actualizaciones y parches, y proponer soluciones
+				para corregirlos y asegurar la calidad y confiabilidad del sistema.</p>
+
+
+
+
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+ .main-content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    /* Media queries */
+    @media (max-width: 991.98px) {
+      .sidebar-nav {
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: #ffffff;
+      }
+      .main-content {
+        margin-left: 0;
+        padding: 20px;
+      }
+    }
+
+
+/* Estilos por defecto para pantallas grandes */
+.sidebar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  padding-top: 60px;
+  background-color: #057CBB;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .sidebar-nav {
+    width: 80px;
+  }
+}
+
+.container-central {
+  margin-top: 70px;
+  margin-left: 250px; /* Se ajusta al ancho del sidebar */
+  padding: 20px; /* Ajusta el espacio de relleno interno */
+  width: calc(100% - 250px); /* Calcula el ancho restante */
+  box-sizing: border-box; /* Evita que los bordes afecten al ancho */
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .container-central {
+    margin-left: 0; /* Quita el margen izquierdo */
+    width: 100%; /* Ajusta el ancho al 100% */
+    padding: 10px; /* Ajusta el espacio de relleno interno para pantallas pequeñas */
+    margin-top: 65px; /* Quita el margen superior para pantallas pequeñas */
+  }
+}
+
+
+
+
+.nav-link.active {
+  color: black;
+}
+
+.nav-link.active:hover {
+  color: white;
+}
+
+.nav-link.link {
+  color: black;
+
+}
+
+.nav-link.link:hover {
+  color: white;
+
+}
+
+.nav-link.disabled.text {
+  color: white;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .content-h2.text-dark.fs-4 {
+
+    font-size: 17px; /* Reduce el tamaño de la fuente */
+    line-height: 1.1; /* Ajusta el espacio entre líneas */
+    margin-bottom: 10px; /* Añade un margen inferior para separar los títulos */
+    margin-left: 100px;
+  }
+}
+
+.dropdown-menu {
+  width: 50px; /* Define la anchura deseada */
+}
+
+.dropdown-item {
+  width: 30px;
+}
+
+.btn-sm {
+	font-size: 12px;
+}
+
+.container-central-2{
+	margin-top: 60px;
+}
+.texto-tema {
+	color: red;
+}
+.texto-tema-h3 {
+	color: blue;
+}
+code {
+	background-color: black;
+	color: white !important;
+	display: block;
+	overflow-x: auto;
+}
+
+#navbarDropdownMenuLink:hover {
+color: white;
+}
+
+#imagen-wiki {
+	width: 120px;
+	height: auto; /* Ajustar el tamaño vertical de la imagen automáticamente para mantener la proporción */
+	margin-left: 30px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 600px) {
+  #imagen-wiki {
+    width: 60px; /* Cambiar el tamaño horizontal de la imagen */
+    margin-left: 10px;
+  }
+}

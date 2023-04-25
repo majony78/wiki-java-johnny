@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test HTLML</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous" />
+</head>
+<body>
+
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">WIKI-JAVA-JOHNNY</a>
+
+			<!-- Botón para el colapso del navbar en dispositivos móviles -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+				<ul class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button"
+							id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Temas</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="wiki-tema1.html">Tema1</a> <a
+								class="dropdown-item" href="wiki-tema2.html">Tema2</a> <a
+								class="dropdown-item" href="wiki-tema3.html">Tema3</a> <a
+								class="dropdown-item" href="wiki-tema4.html">Tema4</a> <a
+								class="dropdown-item" href="wiki-tema5.html">Tema5</a> <a
+								class="dropdown-item" href="wiki-tema6.html">Tema6</a> <a
+								class="dropdown-item" href="wiki-tema7.html">Tema7</a> <a
+								class="dropdown-item" href="wiki-tema8.html">Tema8</a> <a
+								class="dropdown-item" href="wiki-tema9.html">Tema9</a> <a
+								class="dropdown-item" href="wiki-tema10.html">Tema10</a>
+						</div>
+					</div>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div class="container-central-2 container-fluid ">
+
+		<div class="contendor-texto-tema">
+			<h1 class="texto-tema text-center">Tema 9</h1>
+			<h3 class="texto-tema-h3 text-center">Maven avanzado</h3>
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="etxt-center" id="h1-texto-enunciado">Introducción a Maven: conceptos
+				básicos y estructura de directorios</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+<p>Maven es una herramienta de gestión de proyectos de software que se utiliza principalmente para la construcción y gestión de dependencias en proyectos Java. Proporciona una estructura estandarizada para los proyectos Java, lo que facilita su construcción, gestión y distribución.
+
+<p>Algunos conceptos básicos de Maven incluyen:
+
+<p>1. Archivo POM (Project Object Model): es el archivo de configuración principal de Maven, que describe el proyecto y sus dependencias.
+
+<p>2. Repositorio: es el lugar donde se almacenan las dependencias y artefactos utilizados por el proyecto.
+
+<p>3. Fase: es un punto en el ciclo de vida de construcción de un proyecto, como la compilación, prueba, empaquetado, instalación o despliegue.
+
+<p>4. Plugin: es un componente que proporciona una funcionalidad específica en una fase determinada del ciclo de vida de construcción.
+
+<p>La estructura de directorios de un proyecto Maven es la siguiente:
+
+<pre><code>
+├── pom.xml
+├── src
+│   ├── main
+│   │   ├── java
+│   │   ├── resources
+│   │   └── webapp
+│   └── test
+│       ├── java
+│       └── resources
+└── target
+</code></pre>
+
+<p>- pom.xml: archivo POM que describe el proyecto y sus dependencias.</p>
+<p>- src/main/java: código fuente de la aplicación principal.</p>
+<p>- src/main/resources: recursos como archivos de configuración, propiedades, etc.</p>
+<p>- src/main/webapp: archivos web como HTML, CSS, JavaScript, etc.</p>
+<p>- src/test/java: código fuente de las pruebas unitarias.</p>
+<p>- src/test/resources: recursos para las pruebas unitarias.</p>
+<p>- target: directorio donde se generan los artefactos y resultados de la construcción.</p>
+
+<p>La estructura de directorios estandarizada de Maven permite que los desarrolladores encuentren fácilmente los archivos y recursos necesarios para construir y gestionar un proyecto.</p>
+
+
+
+</pre>
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Instalación y configuración de Maven
+				en proyectos Java</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+<p>La instalación y configuración de Maven en proyectos Java se puede hacer siguiendo estos pasos:</p>
+
+<p>1. Descarga e instala Maven en tu sistema operativo. Puedes hacerlo desde el sitio oficial de Apache Maven (https://maven.apache.org/download.cgi).</p>
+
+<p>2. Configura las variables de entorno necesarias para que Maven funcione correctamente en tu sistema operativo. Deberás configurar la variable de entorno PATH para que apunte al directorio donde se encuentra el binario de Maven.</p>
+
+<p>3. Crea un nuevo proyecto Java o abre uno ya existente en tu IDE preferido (por ejemplo, Eclipse o IntelliJ IDEA).</p>
+
+<p>4. Añade el archivo pom.xml a la raíz del proyecto. Este archivo contiene la configuración necesaria para Maven y define las dependencias del proyecto.</p>
+
+<p>5. Configura las dependencias del proyecto en el archivo pom.xml. Para hacerlo, deberás agregar las dependencias que tu proyecto necesita. Puedes buscar y encontrar las dependencias necesarias en Maven Central Repository (https://mvnrepository.com/).</p>
+
+<p>6. Ejecuta los comandos de Maven en la línea de comandos o a través de la interfaz de usuario de tu IDE. Algunos de los comandos más comunes son:</p>
+<pre><code>mvn compile: compila el código fuente del proyecto.
+mvn package: empaqueta el proyecto en un archivo JAR o WAR.
+mvn test: ejecuta los casos de prueba del proyecto.
+mvn install: instala el proyecto en el repositorio local de Maven.
+</code></pre>
+<p>7. Revisa los resultados de la ejecución de los comandos de Maven en la consola o en la interfaz de usuario de tu IDE.</p>
+
+<p>Con estos pasos, habrás instalado y configurado Maven en tu proyecto Java y podrás empezar a aprovechar todas las ventajas que esta herramienta ofrece para la gestión de dependencias y construcción de proyectos. </p>
+
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Creación de un proyecto Java con
+				Maven: el comando "mvn archetype:generate"</h1>
+		</div>
+		
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+<p>El comando "mvn archetype:generate" es una de las formas más comunes de crear un proyecto Java con Maven. Este comando utiliza un arquetipo predefinido para generar la estructura de directorios y los archivos necesarios para un proyecto Java.</p>
+
+<p>Para usar el comando "mvn archetype:generate", sigue estos pasos:</p>
+
+<p>1. Abre una terminal o línea de comandos en tu sistema operativo.</p>
+<p>2. Navega hasta la carpeta donde quieras crear el proyecto Java.</p>
+<p>3. Ejecuta el comando "mvn archetype:generate".</p>
+<p>4. Maven te pedirá que selecciones un arquetipo. Puedes elegir uno de los arquetipos predefinidos o crear uno personalizado.</p>
+<p>5. Maven te pedirá que ingreses información sobre el proyecto, como el identificador de grupo, el nombre del proyecto, la versión y la descripción.</p>
+<p>6. Maven generará el proyecto con la estructura de directorios y los archivos necesarios.</p>
+
+<p>A continuación, se muestra un ejemplo de cómo crear un proyecto Java con Maven usando el comando "mvn archetype:generate":</p>
+
+<pre><code>mvn archetype:generate \
+  -DgroupId=com.example \
+  -DartifactId=my-app \
+  -DarchetypeArtifactId=maven-archetype-quickstart \
+  -DinteractiveMode=false
+</code></pre>
+<p>En este ejemplo, estamos creando un proyecto con el identificador de grupo "com.example", el nombre de artefacto "my-app" y utilizando el arquetipo predefinido "maven-archetype-quickstart".</p>
+
+<p>Una vez que se completa el proceso, tendrás una estructura de directorios y archivos preconfigurada para comenzar a desarrollar tu proyecto Java con Maven.</p>
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Gestión de dependencias en Maven declaración de dependencias en el
+				archivo pom.xml</h1>
+		</div>
+		
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+<p>La gestión de dependencias en Maven se realiza a través del archivo pom.xml. Para declarar una dependencia en un proyecto Maven, se debe agregar la información de la dependencia en este archivo.</p>
+
+<p>La información de la dependencia incluye el identificador de la dependencia (groupId y artifactId), la versión y el alcance (scope). Por ejemplo:</p>
+
+<pre><code>
+  &lt;dependencies&gt;
+    &lt;dependency&gt;
+      &lt;groupId&gt;com.example&lt;/groupId&gt;
+      &lt;artifactId&gt;my-dependency&lt;/artifactId&gt;
+      &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;/dependency&gt;
+  &lt;/dependencies&gt;
+</code></pre>
+
+<p>Esta dependencia se encuentra en el grupo com.example, tiene el identificador my-dependency y la versión 1.0.0.</p>
+
+<p>El alcance de la dependencia puede ser compile (compilación y ejecución), provided (disponible en tiempo de compilación y provista en tiempo de ejecución), runtime (disponible en tiempo de ejecución), test (disponible solo en tiempo de pruebas) o system (referencia a un archivo en el sistema de archivos).</p>
+
+<p>Es importante que las dependencias se declaren de manera precisa y coherente en el archivo pom.xml para garantizar que el proyecto se construya correctamente y se puedan resolver las dependencias requeridas.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Resolución de conflictos de
+				dependencias en Maven</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+<p>La resolución de conflictos de dependencias es un proceso importante en la gestión de proyectos con Maven, ya que puede haber situaciones en las que dos o más dependencias requieren diferentes versiones de una misma biblioteca o librería.</p>
+
+<p>Maven utiliza una estrategia de resolución de conflictos basada en la versión más cercana, lo que significa que seleccionará la versión de la dependencia más cercana a la raíz del árbol de dependencias. Si hay varias dependencias con la misma versión, se seleccionará la primera encontrada en el archivo pom.xml.</p>
+
+<p>Si hay un conflicto de versión, Maven generará un informe de conflicto de dependencias que incluye información sobre cada dependencia y su versión, así como sobre la dependencia que se ha seleccionado y por qué.</p>
+
+<p>Para resolver los conflictos de dependencias, se pueden utilizar varias estrategias, como excluir una dependencia específica o forzar la versión de una dependencia en particular. Estas estrategias se pueden configurar en el archivo pom.xml utilizando las etiquetas &lt;exclusions&gt; y &lt;dependencyManagement&gt;, respectivamente.</p>
+
+<p>Es importante tener en cuenta que la resolución de conflictos de dependencias puede ser un proceso complejo, especialmente en proyectos grandes con muchas dependencias. Por lo tanto, es recomendable utilizar herramientas de análisis y visualización de dependencias para ayudar a identificar y resolver conflictos de manera eficiente.</p>
+
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de repositorios Maven configuración de repositorios
+				locales y remotos</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+	
+<p>Maven utiliza repositorios para almacenar las dependencias de los proyectos. Hay tres tipos de repositorios:</p>
+
+<p>1. Repositorio local: es un repositorio en el sistema de archivos local de la máquina en la que se está ejecutando Maven. Por defecto, este repositorio se encuentra en "~/.m2/repository" en sistemas Unix o "C:\Documents and Settings\{usuario}\.m2\repository" en sistemas Windows. Maven descarga las dependencias de los proyectos de los repositorios remotos y las almacena en el repositorio local.</p> 
+
+<p>2. Repositorio remoto: es un repositorio en una ubicación remota que almacena las dependencias de los proyectos. Por defecto, Maven utiliza el repositorio central de Maven en "https://repo.maven.apache.org/maven2/". Además, se pueden agregar repositorios remotos personalizados en el archivo de configuración de Maven (settings.xml).</p>
+
+<p>3. Repositorio de distribución: es un repositorio que contiene los archivos binarios y de origen de los proyectos compilados. Por defecto, se ubica en el mismo directorio que el repositorio local.</p>
+
+<p>Para configurar los repositorios en Maven, se puede editar el archivo de configuración "settings.xml" ubicado en "~/.m2" (para sistema Unix) o "C:\Documents and Settings\{usuario}\.m2" (para sistemas Windows). Se pueden agregar repositorios remotos personalizados en la sección "repositories" del archivo. Por ejemplo:</p>
+
+<pre><code>&lt;settings&gt;
+  ...
+  &lt;repositories&gt;
+    &lt;repository&gt;
+      &lt;id&gt;my-custom-repo&lt;/id&gt;
+      &lt;name&gt;My Custom Repo&lt;/name&gt;
+      &lt;url&gt;http://example.com/maven-repo&lt;/url&gt;
+    &lt;/repository&gt;
+  &lt;/repositories&gt;
+  ...
+&lt;/settings&gt;
+</code></pre>
+
+<p>Para especificar una dependencia en un proyecto Maven, se debe incluir el elemento &lt;dependency&gt; en el archivo pom.xml del proyecto. Por ejemplo:</p>
+
+<pre><code>&lt;dependencies&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-core&lt;/artifactId&gt;
+    &lt;version&gt;5.3.10&lt;/version&gt;
+  &lt;/dependency&gt;
+&lt;/dependencies&gt;</code></pre>
+
+<p>Si hay un conflicto de dependencias entre dos o más dependencias, Maven utiliza una estrategia de resolución de conflictos para determinar cuál debe ser utilizada. Por defecto, se utiliza la versión más reciente de la dependencia. Sin embargo, se pueden definir reglas específicas de exclusión de dependencias en el archivo pom.xml del proyecto para resolver conflictos. Por ejemplo:</p>
+
+<pre><code>&lt;dependencies&gt;
+  &lt;dependency&gt;
+    &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-core&lt;/artifactId&gt;
+    &lt;version&gt;5.3.10&lt;/version&gt;
+    &lt;exclusions&gt;
+      &lt;exclusion&gt;
+        &lt;groupId&gt;org.springframework&lt;/groupId&gt;
+        &lt;artifactId&gt;spring-jcl&lt;/artifactId&gt;
+      &lt;/exclusion&gt;
+    &lt;/exclusions&gt;
+  &lt;/dependency&gt;
+&lt;/dependencies&gt;</code></pre>
+
+
+
+		
+	
+
+
+
+		</div>
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Creación de perfiles de construcción
+				en Maven configuración de diferentes
+				entorno</h1>
+		</div>
+		
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+
+
+<p>Maven permite la creación de perfiles de construcción para configurar diferentes entornos, como desarrollo, pruebas y producción. Los perfiles se definen en el archivo `pom.xml` y se activan mediante diferentes criterios, como variables de sistema, propiedades definidas en el archivo `settings.xml` o la presencia de ciertos archivos en el sistema.</p>
+
+<p>Para crear un perfil de construcción, se debe agregar la sección &lt;profiles&gt; dentro del archivo `pom.xml`. Dentro de esta sección, se define cada perfil mediante una etiqueta &lt;profile&gt;. Dentro de cada perfil, se pueden definir diferentes configuraciones, como la definición de propiedades, la inclusión de dependencias específicas y la configuración de plugins.</p>
+
+<p>Por ejemplo, para configurar un perfil de producción que incluya una dependencia específica y defina una propiedad, se puede agregar lo siguiente al archivo `pom.xml`:</p>
+
+<pre><code>&lt;profiles&gt;
+  &lt;profile&gt;
+    &lt;id&gt;production&lt;/id&gt;
+    &lt;properties&gt;
+      &lt;environment&gt;production&lt;/environment&gt;
+    &lt;/properties&gt;
+    &lt;dependencies&gt;
+      &lt;dependency&gt;
+        &lt;groupId&gt;com.example&lt;/groupId&gt;
+        &lt;artifactId&gt;example-library&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+      &lt;/dependency&gt;
+    &lt;/dependencies&gt;
+  &lt;/profile&gt;
+&lt;/profiles&gt;
+</code></pre>
+
+
+<p>Para activar el perfil de producción, se puede usar el siguiente comando:</p>
+
+
+<p><code>mvn clean install -Pproduction</code></p>
+
+
+
+<p>Esto ejecutará la construcción del proyecto con la configuración definida en el perfil de producción.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Uso de plugins en Maven:
+				configuración y ejecución de plugins en la construcción del proyecto</h1>
+		</div>
+		
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+<p>Maven es muy flexible y permite la integración de plugins en la construcción de un proyecto. Para utilizar un plugin, se debe agregar su configuración en el archivo pom.xml del proyecto. Por ejemplo, si se desea utilizar el plugin de compilación de Java, se puede agregar lo siguiente al archivo pom.xml:</p>
+
+<pre><code>&lt;build&gt;
+  &lt;plugins&gt;
+    &lt;plugin&gt;
+      &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+      &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+      &lt;version&gt;3.8.1&lt;/version&gt;
+      &lt;configuration&gt;
+        &lt;source&gt;1.8&lt;/source&gt;
+        &lt;target&gt;1.8&lt;/target&gt;
+      &lt;/configuration&gt;
+    &lt;/plugin&gt;
+  &lt;/plugins&gt;
+&lt;/build&gt;
+</code></pre>
+
+<p>Este código agrega el plugin de compilación de Java al proyecto y especifica la versión de Java que se utilizará.</p>
+
+<p>Para ejecutar un plugin en la construcción del proyecto, se puede usar el siguiente comando:</p>
+
+<p><code>mvn [plugin]:[goal]</code></p>
+
+<p>Donde [plugin] es el nombre del plugin y [goal] es el objetivo que se desea ejecutar. Por ejemplo, si se desea ejecutar el objetivo "compile" del plugin de compilación de Java, se puede usar el siguiente comando:</p>
+
+<p><code>mvn compiler:compile</code></p>
+
+<p>Este comando ejecutará el plugin de compilación de Java y compilará el código fuente del proyecto.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Creación de plugins personalizados
+				en Maven</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+		
+
+<p>Para crear un plugin personalizado en Maven, se deben seguir los siguientes pasos:</p>
+
+<p>1. Crear un proyecto de tipo "maven-archetype-plugin" usando el comando "mvn archetype:generate" y seleccionando la opción correspondiente.</p>
+
+<p>2. Editar el archivo "pom.xml" del proyecto y agregar las dependencias necesarias para el plugin que se desea crear.</p>
+
+<p>3. Crear la clase que implemente la funcionalidad del plugin y agregarla al proyecto. La clase debe extender la clase "AbstractMojo" y debe ser anotada con "@Mojo" para que Maven la reconozca como un plugin.</p>
+
+<p>4. Configurar el plugin en el archivo "pom.xml" del proyecto. Se deben especificar los parámetros que se desean utilizar, así como los goals que se desean definir para el plugin.</p>
+
+<p>5. Compilar el proyecto usando el comando "mvn install" para generar el archivo ".jar" del plugin.</p>
+
+<p>6. Usar el plugin en otros proyectos de Maven agregando la dependencia correspondiente en el archivo "pom.xml" y configurando el plugin en el mismo archivo.</p>
+
+
+
+
+
+		</div>
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración avanzada de
+				construcción en Maven perfiles, propiedades y variables
+				de entorno</h1>
+		</div>
+		
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+<pre><code>&lt;project&gt;
+  &lt;groupId&gt;com.example&lt;/groupId&gt;
+  &lt;artifactId&gt;my-project&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+  
+  &lt;properties&gt;
+    &lt;my.property&gt;default-value&lt;/my.property&gt;
+  &lt;/properties&gt;
+  
+  &lt;profiles&gt;
+    &lt;profile&gt;
+      &lt;id&gt;dev&lt;/id&gt;
+      &lt;properties&gt;
+        &lt;my.property&gt;dev-value&lt;/my.property&gt;
+      &lt;/properties&gt;
+      &lt;activation&gt;
+        &lt;activeByDefault&gt;true&lt;/activeByDefault&gt;
+      &lt;/activation&gt;
+    &lt;/profile&gt;
+    &lt;profile&gt;
+      &lt;id&gt;prod&lt;/id&gt;
+      &lt;properties&gt;
+        &lt;my.property&gt;prod-value&lt;/my.property&gt;
+      &lt;/properties&gt;
+      &lt;activation&gt;
+        &lt;property&gt;
+          &lt;name&gt;env&lt;/name&gt;
+          &lt;value&gt;prod&lt;/value&gt;
+        &lt;/property&gt;
+      &lt;/activation&gt;
+    &lt;/profile&gt;
+  &lt;/profiles&gt;
+  
+  &lt;build&gt;
+    &lt;plugins&gt;
+      &lt;plugin&gt;
+        &lt;groupId&gt;com.example&lt;/groupId&gt;
+        &lt;artifactId&gt;my-plugin&lt;/artifactId&gt;
+        &lt;version&gt;1.0.0&lt;/version&gt;
+        &lt;executions&gt;
+          &lt;execution&gt;
+            &lt;id&gt;my-goal&lt;/id&gt;
+            &lt;goals&gt;
+              &lt;goal&gt;my-goal&lt;/goal&gt;
+            &lt;/goals&gt;
+            &lt;configuration&gt;
+              &lt;my.property&gt;${my.property}&lt;/my.property&gt;
+            &lt;/configuration&gt;
+          &lt;/execution&gt;
+        &lt;/executions&gt;
+      &lt;/plugin&gt;
+    &lt;/plugins&gt;
+  &lt;/build&gt;
+&lt;/project&gt;</code></pre>
+
+
+
+<p>Este ejemplo muestra cómo configurar propiedades y perfiles en Maven. El perfil "dev" está activado de forma predeterminada y establece la propiedad "my.property" en "dev-value". El perfil "prod" solo se activará si la variable de entorno "env" tiene el valor "prod" y establece la propiedad "my.property" en "prod-value". El plugin "my-plugin" se configura para usar la propiedad "my.property" en su configuración de ejecución.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Construcción de proyectos
+				multi-módulo en Maven y spring boot creación de proyectos padre y
+				módulos</h1>
+		</div>
+		
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+
+<p>La construcción de proyectos multi-módulo en Maven y Spring Boot es una forma de estructurar un proyecto en varias partes más pequeñas y manejables. En este enfoque, se crea un proyecto padre que contiene módulos secundarios, cada uno de los cuales representa una parte del proyecto más grande.</p>
+
+<p>Para crear un proyecto multi-módulo en Maven, primero se debe crear un proyecto padre que contenga un archivo pom.xml. Luego, se pueden agregar módulos secundarios a este archivo pom.xml utilizando la etiqueta &lt;modules&gt;. Cada módulo secundario debe tener su propio archivo pom.xml y debe definirse como un subdirectorio del proyecto padre.</p>
+
+<p>Aquí hay un ejemplo de cómo crear un proyecto padre con dos módulos secundarios en Maven:</p>
+
+<p>1. Crear un directorio para el proyecto padre:</p>
+
+<pre><code>$ mkdir my-project
+$ cd my-project</code></pre>
+
+<p>2. Crear un archivo pom.xml para el proyecto padre y agregar información básica como el nombre, la versión y la descripción:</p>
+
+ <pre><code>&lt;project>
+    &lt;modelVersion>4.0.0&lt;/modelVersion>
+    &lt;groupId>com.example&lt;/groupId>
+    &lt;artifactId>my-project&lt;/artifactId>
+    &lt;version>1.0.0&lt;/version>
+    &lt;packaging>pom&lt;/packaging>
+    &lt;name>My Project&lt;/name>
+    &lt;description>This is a multi-module project&lt;/description>
+  &lt;/project></code></pre>
+
+<p>3. Crear dos subdirectorios para los módulos secundarios:</p>
+
+<p><code>$ mkdir module1
+$ mkdir module2</code>
+
+<p>4. Crear un archivo pom.xml para cada módulo secundario y agregar información básica como el nombre, la versión y la descripción:</p>
+<pre><code>&lt;project&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+  &lt;parent&gt;
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;my-project&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+  &lt;/parent&gt;
+  &lt;artifactId&gt;module1&lt;/artifactId&gt;
+  &lt;name&gt;Module 1&lt;/name&gt;
+  &lt;description&gt;This is module 1 of My Project&lt;/description&gt;
+&lt;/project&gt;
+
+&lt;project&gt;
+  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+  &lt;parent&gt;
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;my-project&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+  &lt;/parent&gt;
+  &lt;artifactId&gt;module2&lt;/artifactId&gt;
+  &lt;name&gt;Module 2&lt;/name&gt;
+  &lt;description&gt;This is module 2 of My Project&lt;/description&gt;
+&lt;/project&gt;</code></pre>
+
+<p>5. Agregar los módulos secundarios al archivo pom.xml del proyecto padre utilizando la etiqueta &lt;modules&gt;:</p>
+
+<pre><code>&lt;project&gt;
+    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+    &lt;groupId&gt;com.example&lt;/groupId&gt;
+    &lt;artifactId&gt;my-project&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+    &lt;packaging&gt;pom&lt;/packaging&gt;
+    &lt;name&gt;My Project&lt;/name&gt;
+    &lt;description&gt;This is a multi-module project&lt;/description&gt;
+    &lt;modules&gt;
+      &lt;module&gt;module1&lt;/module&gt;
+      &lt;module&gt;module2&lt;/module&gt;
+    &lt;/modules&gt;
+  &lt;/project&gt;</code></pre>
+
+<p>Con estos pasos, se ha creado un proyecto multi-módulo en Maven con un proyecto padre y dos módulos secundarios. El proyecto padre se compila y empaqueta todos los módulos secundarios cuando se ejecuta el comando "mvn install" en el directorio raíz del proyecto padre.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso de perfiles en Maven para la
+				gestión de diferentes entornos y configuraciones</h1>
+		</div>
+		
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+<p>Maven permite el uso de perfiles para la gestión de diferentes entornos y configuraciones. Los perfiles permiten definir diferentes configuraciones de construcción para diferentes entornos, como por ejemplo desarrollo, pruebas y producción.</p>
+
+<p>Los perfiles se definen en el archivo pom.xml y se activan mediante la opción "-P" seguida del nombre del perfil en la línea de comandos de Maven.</p>
+
+<p>Para definir un perfil, se utiliza la etiqueta &lt;profiles&gt; en el archivo pom.xml. Dentro de esta etiqueta, se pueden definir diferentes secciones, como &lt;properties&gt;, &lt;dependencies&gt; y &lt;build&gt;, para especificar diferentes configuraciones de construcción.</p>
+
+<p>Por ejemplo, para definir un perfil de producción, se puede agregar lo siguiente al archivo pom.xml:</p>
+
+<pre><code>&lt;profiles&gt;
+    &lt;profile&gt;
+        &lt;id&gt;produccion&lt;/id&gt;
+        &lt;properties&gt;
+            &lt;database.host&gt;produccion.example.com&lt;/database.host&gt;
+        &lt;/properties&gt;
+    &lt;/profile&gt;
+&lt;/profiles&gt;</code></pre>
+
+<p>En este ejemplo, se ha definido un perfil llamado "produccion" que define una propiedad de base de datos llamada "database.host" con un valor de "produccion.example.com".</p>
+
+<p>Para activar este perfil en la línea de comandos de Maven, se utiliza la opción "-P produccion". Al hacer esto, se utilizarán las configuraciones de construcción definidas en el perfil de producción.</p>
+
+<p>Es importante tener en cuenta que los perfiles pueden heredar configuraciones de otros perfiles y pueden ser activados por defecto mediante la etiqueta &lt;activeByDefault&gt;.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de versiones en Maven configuración y uso de versiones de
+				artefactos</h1>
+		</div>
+
+		
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+<p>Maven es una herramienta que facilita la gestión de versiones en proyectos de desarrollo de software. A través del archivo pom.xml, Maven permite definir la versión de los artefactos que se generan en la construcción del proyecto.</p>
+
+<p>La versión de un artefacto en Maven se compone de tres números separados por puntos: major.minor.patch. El número major indica cambios incompatibles con versiones anteriores, el número minor indica nuevas funcionalidades que son compatibles con versiones anteriores y el número patch indica corrección de errores.</p>
+
+<p>Maven también permite el uso de versiones con números de revisión o "SNAPSHOT" para indicar que se trata de una versión en desarrollo y aún no está lista para su publicación. Además, se pueden utilizar etiquetas para marcar versiones específicas del proyecto en el repositorio.</p>
+
+<p>La gestión de versiones en Maven se realiza a través de la configuración del archivo pom.xml y se puede hacer uso de plugins específicos para esta tarea, como el plugin "versions". También es posible utilizar variables en el archivo pom.xml para gestionar las versiones de forma más flexible y dinámica.</p>
+
+<p>La gestión de versiones en Maven es una herramienta esencial para el desarrollo de software y permite mantener un control detallado de los artefactos generados en la construcción del proyecto.</p>
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Publicación de artefactos en
+				repositorios Maven configuración y uso de Nexus o
+				Artifactory</h1>
+		</div>
+		
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+<p>La gestión de versiones es un aspecto fundamental en cualquier proyecto de software y en Maven es posible configurar y utilizar versiones de artefactos de forma sencilla. Para ello, en el archivo pom.xml se puede declarar la versión del proyecto utilizando la etiqueta &lt;version&gt;, la cual puede ser de la forma X.Y.Z, donde X es la versión mayor, Y es la versión menor y Z es la versión de revisión. Es importante tener en cuenta que al utilizar versiones en Maven se debe seguir el esquema de control de versiones SemVer (Semantic Versioning).</p>
+
+<p>Además de la versión del proyecto, en el archivo pom.xml también se pueden configurar las versiones de las dependencias del proyecto mediante la etiqueta &lt;dependencies&gt;. Es posible indicar una versión específica de una dependencia o utilizar rangos de versiones utilizando la notación de paréntesis y corchetes.</p>
+
+<p>Es recomendable utilizar versiones de dependencias estables y mantenerlas actualizadas en el archivo pom.xml para asegurar la correcta compatibilidad y funcionamiento del proyecto.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración de construcciones
+				automáticas en Maven: integración continua y sistemas de
+				construcción</h1>
+		</div>
+		
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+		
+<p>La configuración de construcciones automáticas en Maven es fundamental para lograr una integración continua exitosa y un sistema de construcción eficiente. Para ello, se pueden utilizar diferentes herramientas y sistemas, como Jenkins, Travis CI, CircleCI, entre otros.<p>
+
+<p>En general, la idea es configurar estos sistemas para que realicen automáticamente las construcciones de los proyectos de Maven cuando se realizan cambios en el código fuente o se realizan merge requests. Para ello, se debe configurar el sistema de construcción para que ejecute los comandos de Maven necesarios para construir el proyecto.<p>
+
+<p>También es posible configurar los sistemas de construcción para que realicen pruebas automatizadas y para que desplieguen automáticamente las nuevas versiones del proyecto en un servidor de producción o en un repositorio de artefactos.<p>
+
+<p>La configuración de construcciones automáticas en Maven es importante para lograr un proceso de desarrollo eficiente y confiable, ya que permite asegurarse de que cada cambio en el código fuente sea construido, probado y desplegado correctamente en un entorno de producción. Esto ayuda a prevenir errores y fallos en el sistema, y a mantener una alta calidad en el software desarrollado.<p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Uso de Maven en proyectos con
+				arquitecturas de microservicios y contenedores</h1>
+		</div>
+		
+
+
+	<div class="container" style="background-color: #EEEBEB;">
+
+
+
+<p>Maven es una herramienta ampliamente utilizada en proyectos con arquitecturas de microservicios y contenedores.</p>
+
+<p>En estos tipos de proyectos, Maven se utiliza principalmente para la gestión de dependencias y la compilación de código. También puede utilizarse para la construcción de imágenes de contenedores, la ejecución de pruebas automatizadas y la creación de perfiles de configuración.</p>
+
+<p>En la mayoría de los casos, los proyectos de microservicios y contenedores se dividen en módulos, cada uno de los cuales se compila y se empaqueta en un artefacto independiente. Maven facilita esta tarea al permitir la configuración de múltiples módulos y la construcción de cada uno de ellos de forma individual.</p>
+
+<p>Además, Maven también es compatible con herramientas de orquestación de contenedores como Kubernetes y Docker Compose. Esto significa que se puede utilizar Maven para crear y desplegar fácilmente contenedores en entornos de producción.</p>
+
+<p>Maven es una herramienta muy útil para proyectos de microservicios y contenedores, ya que facilita la gestión de dependencias, la compilación de código, la creación de imágenes de contenedores y el despliegue en entornos de producción.</p>
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Configuración de construcciones de
+				liberación en Maven: creación de versiones y etiquetas</h1>
+		</div>
+		
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+<p>Maven es una herramienta muy útil para la gestión de construcciones de liberación en proyectos de software. Una de las tareas principales en este proceso es la creación de versiones y etiquetas que identifiquen de forma única cada liberación.</p>
+
+<p>En Maven, las versiones se componen de tres partes: el número de versión principal, el número de versión secundario y el número de versión de revisión. Estos números se separan por puntos, y se utilizan para indicar cambios significativos en el software.</p>
+
+<p>Para crear una versión de liberación en Maven, se utiliza el plugin de Maven Release. Este plugin automatiza gran parte del proceso, incluyendo la creación de etiquetas y la actualización de los números de versión.</p>
+
+<p>El plugin de Maven Release utiliza dos fases principales: preparación y liberación. Durante la fase de preparación, se verifica que el proyecto esté listo para su liberación, se actualizan los números de versión y se crea una etiqueta. Durante la fase de liberación, se carga el proyecto en el repositorio de liberación y se genera la documentación.</p>
+
+<p>En resumen, Maven es una herramienta muy útil para la gestión de construcciones de liberación en proyectos de software, gracias a su capacidad para crear versiones y etiquetas de forma sencilla y automatizada mediante el uso del plugin de Maven Release.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Gestión de dependencias transitivas
+				en Maven resolución y exclusión de
+				dependencias</h1>
+		</div>
+		
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+<p>Maven es una herramienta muy útil para la gestión de dependencias en proyectos de software. Una de las funcionalidades más importantes de Maven es la gestión de dependencias transitivas, que se refiere a las dependencias de las dependencias.</p>
+
+<p>Cuando se agrega una dependencia en un proyecto de Maven, es posible que esta dependencia tenga a su vez otras dependencias que también necesiten ser descargadas y agregadas al proyecto. Esto se conoce como dependencias transitivas.</p>
+
+<p>Maven resuelve automáticamente las dependencias transitivas utilizando el árbol de dependencias del proyecto. Esto significa que, cuando se agrega una dependencia, Maven verifica todas las dependencias transitivas y las descarga automáticamente.</p>
+
+<p>Sin embargo, en algunos casos, es posible que se deba excluir una dependencia transitiva específica. Para ello, se puede utilizar la etiqueta &lt;exclusions&gt; en el archivo pom.xml para excluir la dependencia específica.</p>
+
+<p>Por ejemplo, si se tiene una dependencia transitiva que está causando conflictos con otra dependencia, se puede excluir esa dependencia transitiva utilizando la etiqueta &lt;exclusions&gt;. De esta manera, se puede garantizar que la versión correcta de la dependencia se está utilizando en el proyecto.</p>
+
+<p>En resumen, la gestión de dependencias transitivas en Maven es una funcionalidad muy útil que permite descargar y agregar automáticamente todas las dependencias necesarias para el proyecto. Además, la capacidad de excluir dependencias específicas mediante la etiqueta &lt;exclusions&gt; proporciona una mayor flexibilidad en la gestión de dependencias en proyectos de software.</p>
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

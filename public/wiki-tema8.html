@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test HTLML</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous" />
+</head>
+<body>
+
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">WIKI-JAVA-JOHNNY</a>
+
+			<!-- Botón para el colapso del navbar en dispositivos móviles -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+				<ul class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button"
+							id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Temas</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="wiki-tema1.html">Tema1</a> <a
+								class="dropdown-item" href="wiki-tema2.html">Tema2</a> <a
+								class="dropdown-item" href="wiki-tema3.html">Tema3</a> <a
+								class="dropdown-item" href="wiki-tema4.html">Tema4</a> <a
+								class="dropdown-item" href="wiki-tema5.html">Tema5</a> <a
+								class="dropdown-item" href="wiki-tema6.html">Tema6</a> <a
+								class="dropdown-item" href="wiki-tema7.html">Tema7</a> <a
+								class="dropdown-item" href="wiki-tema8.html">Tema8</a> <a
+								class="dropdown-item" href="wiki-tema9.html">Tema9</a> <a
+								class="dropdown-item" href="wiki-tema10.html">Tema10</a>
+						</div>
+					</div>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+
+	<div class="container-central-2 container-fluid ">
+
+		<div class="contendor-texto-tema">
+			<h1 class="texto-tema text-center">Tema 8</h1>
+			<h3 class="texto-tema-h3 text-center">Despliegue continuo con
+				jenkins, git y spring boot</h3>
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Introducción a
+				la integración continua y entrega continua (CI/CD)</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>La integración continua (CI) y la entrega continua (CD) son
+				prácticas clave en la industria del desarrollo de software que
+				permiten automatizar y acelerar el proceso de desarrollo y entrega
+				de software.</p>
+
+			<p>La integración continua se refiere a la práctica de fusionar
+				el código de diferentes desarrolladores en un repositorio común de
+				forma frecuente (por ejemplo, varias veces al día). Esto permite
+				detectar errores de forma temprana y evitar conflictos de
+				integración en el futuro.</p>
+
+			<p>Por otro lado, la entrega continua se refiere a la práctica de
+				automatizar el proceso de compilación, pruebas y entrega del
+				software a un entorno de producción. Esto permite reducir el tiempo
+				necesario para lanzar nuevas funcionalidades y correcciones a
+				producción, y asegurar que el software entregado sea de alta calidad
+				y cumpla con los requisitos del negocio.</p>
+
+			<p>En conjunto, CI/CD permite a los equipos de desarrollo
+				automatizar gran parte del proceso de construcción y entrega de
+				software, lo que puede resultar en un proceso más rápido y
+				confiable, menos errores y una mayor satisfacción del cliente.</p>
+
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Instalación y
+				configuración de Jenkins en diferentes entornos</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Instalación y configuración de Jenkins en Ubuntu</p>
+
+			<p># Actualizar lista de paquetes</p>
+			<p>
+				<code>sudo apt-get update</code>
+			</p>
+
+			<p># Instalar Java</p>
+			<p>
+				<code>sudo apt-get install -y default-jre</code>
+			</p>
+
+			<p># Descargar e instalar Jenkins</p>
+			<pre>
+				<code>wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+echo deb https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo apt-get update
+sudo apt-get install -y jenkins</code>
+			</pre>
+
+			<p># Iniciar servicio de Jenkins</p>
+			<p>
+				<code>sudo systemctl start jenkins</code>
+			</p>
+
+			<p># Configurar firewall para permitir tráfico HTTP y HTTPS</p>
+			<pre>
+				<code>sudo ufw allow 8080/tcp
+sudo ufw allow 8443/tcp</code>
+			</pre>
+
+			<p># Configuración básica de Jenkins</p>
+			<p># Acceder a http://localhost:8080 en un navegador web y seguir
+				las instrucciones del asistente de configuración</p>
+
+			<p># Instalación y configuración de Jenkins en Windows</p>
+
+			<p># Descargar e instalar Java</p>
+			<p># Descargar e instalar Jenkins desde
+				https://jenkins.io/download/</p>
+			<p># Iniciar servicio de Jenkins desde el Panel de Control de
+				Windows o mediante el comando "net start jenkins" en la consola de
+				Windows</p>
+
+			<p># Configuración básica de Jenkins</p>
+			<p># Acceder a http://localhost:8080 en un navegador web y seguir
+				las instrucciones del asistente de configuración</p>
+
+			<p># Instalación y configuración de Jenkins en Docker</p>
+
+			<p># Descargar imagen de Jenkins</p>
+			<p>
+				<code>docker pull jenkins/jenkins:lts</code>
+			</p>
+
+			<p># Ejecutar contenedor de Jenkins
+			<pre>
+				<code>docker run -d -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts</code>
+			</pre>
+
+			<p># Configuración básica de Jenkins</p>
+			<p># Acceder a http://localhost:8080 en un navegador web y seguir
+				las instrucciones del asistente de configuración</p>
+			<p># En la sección de plugins recomendados, seleccionar "Instalar
+				plugins sugeridos" y esperar a que se instalen todos los plugins
+				necesarios</p>
+
+			<p># Configuración adicional de Jenkins en Docker</p>
+			<p># Si se quiere persistir los datos de Jenkins en un volumen,
+				añadir el siguiente parámetro al comando de ejecución:</p>
+			<p>
+				<code>-v jenkins_home:/var/jenkins_home</code>
+			</p>
+			<p># Donde "jenkins_home" es el nombre del volumen que se quiere
+				utilizar</p>
+			<p># También se puede utilizar un directorio del host en lugar de
+				un volumen:</p>
+			<p>
+				<code>-v /ruta/a/directorio/local:/var/jenkins_home</code>
+			</p>
+			<p># Además, se puede configurar un usuario y contraseña para el
+				acceso a Jenkins mediante el siguiente parámetro:
+			<pre>
+				<code>"JENKINS_ADMIN_ID=admin" -e "JENKINS_ADMIN_PASSWORD=password"</code>
+			</pre>
+			<p># Donde "admin" es el nombre de usuario deseado y "password"
+				es la contraseña deseada</p>
+			<p># Finalmente, para personalizar la configuración de Jenkins,
+				se puede utilizar un archivo de configuración al iniciar el
+				contenedor:</p>
+			<pre>
+				<code>-v /ruta/a/archivo/config.xml:/var/jenkins_home/config.xml</code>
+			</pre>
+
+
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración de
+				integración con Git en Jenkins</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p># Paso 1: Instalar el plugin Git en Jenkins</p>
+
+			<p>En el panel de control de Jenkins, haga clic en "Administrar
+				Jenkins".</p>
+			<p>En la página de Administración, haga clic en "Administrar
+				complementos".</p>
+			<p>Busque "Git plugin" en la pestaña "Disponible".</p>
+			<p>Seleccione el complemento "Git plugin" y haga clic en
+				"Descargar ahora e instalar después del reinicio".</p>
+
+			<p># Paso 2: Configurar la información de Git en Jenkins</p>
+
+			<p>En el panel de control de Jenkins, haga clic en "Administrar
+				Jenkins".</p>
+			<p>En la página de Administración, haga clic en "Configurar
+				sistemas".</p>
+			<p>Desplácese hacia abajo hasta la sección "Git" y configure la
+				información de Git como la ruta de Git y la configuración de correo
+				electrónico y nombre de usuario.</p>
+
+			<p># Paso 3: Crear un nuevo trabajo en Jenkins</p>
+
+			<p>En el panel de control de Jenkins, haga clic en "Nuevo
+				trabajo".</p>
+			<p>Seleccione el tipo de trabajo que desea crear.</p>
+			<p>Configure el trabajo como lo desee, pero asegúrese de que el
+				repositorio de Git esté configurado correctamente.</p>
+
+			<p># Paso 4: Configurar la integración con Git en el trabajo</p>
+
+			<p>En la configuración del trabajo, busque la sección "Control de
+				fuente" o "Control de versión".</p>
+			<p>Seleccione "Git" como el tipo de control de fuente.</p>
+			<p>Configure la URL del repositorio Git y las credenciales (si es
+				necesario).</p>
+			<p>Configure las ramas o etiquetas que desea construir.</p>
+
+			<p># Paso 5: Ejecutar el trabajo</p>
+
+			<p>Haga clic en "Guardar" para guardar la configuración del
+				trabajo.</p>
+			<p>Haga clic en "Construir ahora" para ejecutar el trabajo y
+				verificar si la integración con Git se ha configurado correctamente.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración de
+				despliegue con Git en Jenkins</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>1. Instalar el plugin "Git plugin" en Jenkins. Esto se puede
+				hacer desde la sección de "Manage Jenkins" > "Manage Plugins".</p>
+
+			<p>2. Crear un nuevo proyecto de Jenkins y configurar el origen
+				del repositorio Git. Para ello, selecciona la opción "Git" en la
+				sección "Source Code Management" y especifica la URL del repositorio
+				Git, así como las credenciales necesarias para acceder al mismo.</p>
+
+			<p>3. Configurar el proceso de construcción y pruebas. Esto se
+				puede hacer en la sección "Build" del proyecto de Jenkins. Por
+				ejemplo, se puede utilizar un archivo de configuración de Maven para
+				compilar y ejecutar pruebas.</p>
+
+			<p>4. Configurar el proceso de despliegue. Para ello, se puede
+				utilizar la opción "Post-build Actions" y seleccionar "Send build
+				artifacts over SSH". Se debe especificar la dirección IP del
+				servidor de destino, así como las credenciales necesarias para
+				acceder al mismo.</p>
+
+			<p>5. Especificar los archivos a desplegar. Se debe especificar
+				los archivos que se desean desplegar en el servidor de destino. Esto
+				se puede hacer en la sección "Advanced" de la opción "Send build
+				artifacts over SSH".</p>
+
+			<p>6. Guardar la configuración del proyecto de Jenkins y ejecutar
+				una construcción para comprobar que todo está correctamente
+				configurado.</p>
+
+			<p>Con estos pasos, deberías ser capaz de configurar un
+				despliegue con Git en Jenkins. Es importante tener en cuenta que la
+				configuración puede variar según las necesidades específicas del
+				proyecto y del entorno de despliegue.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Automatización
+				de construcción y pruebas en Jenkins</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>1. Instalar Jenkins en el servidor. Esto se puede hacer
+				mediante la descarga del archivo war desde el sitio web oficial de
+				Jenkins y ejecutarlo en un contenedor de servlets, como Apache
+				Tomcat.</p>
+
+			<p>2. Crear un nuevo proyecto de Jenkins y configurar el origen
+				del repositorio. Para ello, selecciona la opción "Git" en la sección
+				"Source Code Management" y especifica la URL del repositorio Git,
+				así como las credenciales necesarias para acceder al mismo.</p>
+
+			<p>3. Configurar el proceso de construcción. Esto se puede hacer
+				en la sección "Build" del proyecto de Jenkins. Por ejemplo, se puede
+				utilizar un archivo de configuración de Maven para compilar el
+				proyecto.</p>
+
+			<p>4. Configurar el proceso de pruebas. Para ello, se puede
+				utilizar la opción "Add build step" y seleccionar la herramienta de
+				pruebas a utilizar, como JUnit o Selenium.</p>
+
+			<p>5. Configurar los informes de pruebas. Esto se puede hacer
+				mediante el uso de plugins de Jenkins, como JUnit o HTML Publisher
+				Plugin, para generar informes detallados sobre el resultado de las
+				pruebas.</p>
+
+			<p>6. Configurar la automatización. Esto se puede hacer mediante
+				el uso de plugins de Jenkins, como Build Pipeline Plugin o Delivery
+				Pipeline Plugin, para crear una canalización de construcción y
+				pruebas que se ejecute automáticamente en respuesta a cambios en el
+				repositorio.</p>
+
+			<p>7. Guardar la configuración del proyecto de Jenkins y ejecutar
+				una construcción para comprobar que todo está correctamente
+				configurado.
+			<p>Con estos pasos, deberías ser capaz de automatizar la
+				construcción y pruebas de tu proyecto en Jenkins. Es importante
+				tener en cuenta que la configuración puede variar según las
+				necesidades específicas del proyecto y del entorno de desarrollo.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración de
+				notificaciones y alertas en Jenkins</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>1. Instalar el plugin "Email Extension" en Jenkins. Esto se
+				puede hacer desde la sección de "Manage Jenkins" > "Manage Plugins".</p>
+
+			<p>2. Configurar las credenciales del servidor SMTP. Esto se
+				puede hacer en la sección "Manage Jenkins" > "Configure System" >
+				"Extended E-mail Notification".</p>
+
+			<p>3. Configurar la notificación por correo electrónico para el
+				proyecto de Jenkins. Para ello, selecciona la opción "Editable Email
+				Notification" en la sección "Add post-build action" y especifica los
+				destinatarios del correo electrónico, así como la plantilla del
+				mensaje.</p>
+
+			<p>4. Configurar las alertas. Para ello, se puede utilizar el
+				plugin "Jenkins Notification Plugin" para definir reglas de alerta
+				basadas en eventos específicos, como fallas en la construcción o
+				pruebas.</p>
+
+			<p>5. Configurar la integración con sistemas de chat. Esto se
+				puede hacer mediante el uso de plugins de Jenkins, como el "Jenkins
+				Slack Plugin" o el "Jenkins HipChat Plugin", para enviar
+				notificaciones a canales de chat cuando se produzcan eventos
+				específicos en la canalización de construcción y pruebas.</p>
+
+			<p>6. Configurar la integración con sistemas de seguimiento de
+				problemas. Esto se puede hacer mediante el uso de plugins de
+				Jenkins, como el "Jenkins JIRA Plugin" o el "Jenkins Bugzilla
+				Plugin", para crear o actualizar automáticamente entradas de
+				seguimiento de problemas cuando se produzcan eventos específicos en
+				la canalización de construcción y pruebas.</p>
+
+			<p>7. Guardar la configuración del proyecto de Jenkins y ejecutar
+				una construcción para comprobar que las notificaciones y alertas
+				están correctamente configuradas.</p>
+
+
+
+
+
+		</div>
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de
+				plugins en Jenkins para la integración con Git y Spring Boot</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>1. Instalar el plugin "Git Plugin" en Jenkins. Esto se puede
+				hacer desde la sección de "Manage Jenkins" > "Manage Plugins".</p>
+
+			<p>2. Configurar las credenciales de Git en Jenkins. Esto se
+				puede hacer en la sección "Manage Jenkins" > "Manage Credentials".</p>
+
+			<p>3. Crear un nuevo proyecto de Jenkins y configurar el origen
+				del repositorio. Para ello, selecciona la opción "Git" en la sección
+				"Source Code Management" y especifica la URL del repositorio Git,
+				así como las credenciales necesarias para acceder al mismo.</p>
+
+			<p>4. Configurar el proceso de construcción. Esto se puede hacer
+				en la sección "Build" del proyecto de Jenkins. Por ejemplo, se puede
+				utilizar un archivo de configuración de Maven para compilar el
+				proyecto de Spring Boot.</p>
+
+			<p>5. Configurar la integración con Spring Boot. Para ello, se
+				puede utilizar el plugin "Spring Boot Plugin" para generar un
+				archivo JAR o WAR ejecutable a partir del proyecto de Spring Boot.</p>
+
+			<p>6. Configurar la automatización de la canalización de
+				construcción y despliegue. Esto se puede hacer mediante el uso de
+				plugins de Jenkins, como "Build Pipeline Plugin" o "Delivery
+				Pipeline Plugin", para crear una canalización que se ejecute
+				automáticamente en respuesta a cambios en el repositorio Git y que
+				incluya etapas para la construcción y despliegue del proyecto de
+				Spring Boot.</p>
+
+			<p>7. Guardar la configuración del proyecto de Jenkins y ejecutar
+				una construcción para comprobar que todo está correctamente
+				configurado.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso de Jenkins
+				para la compilación y empaquetado de aplicaciones Spring Boot</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>1. Instalar el plugin "Maven Integration Plugin" en Jenkins.
+				Esto se puede hacer desde la sección de "Manage Jenkins" > "Manage
+				Plugins".</p>
+
+			<p>2. Configurar las opciones de Maven en Jenkins. Para ello, se
+				puede acceder a la sección "Global Tool Configuration" de Jenkins y
+				especificar la ubicación de la instalación de Maven en el servidor.</p>
+
+			<p>3. Crear un nuevo proyecto de Jenkins y configurar el origen
+				del repositorio. Para ello, selecciona la opción "Git" en la sección
+				"Source Code Management" y especifica la URL del repositorio Git,
+				así como las credenciales necesarias para acceder al mismo.</p>
+
+			<p>4. Configurar el proceso de construcción. Esto se puede hacer
+				en la sección "Build" del proyecto de Jenkins. Se debe seleccionar
+				la opción "Invoke top-level Maven targets" y especificar los
+				objetivos de Maven que se utilizarán para compilar y empaquetar la
+				aplicación Spring Boot.</p>
+
+			<p>5. Configurar el empaquetado de la aplicación. Para ello, se
+				puede utilizar el plugin "Spring Boot Plugin" para generar un
+				archivo JAR o WAR ejecutable a partir del proyecto de Spring Boot.</p>
+
+			<p>6. Guardar la configuración del proyecto de Jenkins y ejecutar
+				una construcción para comprobar que todo está correctamente
+				configurado.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Integración de Jenkins con
+				herramientas de gestión de versiones basadas en Git</h1>
+		</div>
+
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>1. Instalar el plugin "Git Plugin" en Jenkins. Esto se puede
+				hacer desde la sección de "Manage Jenkins" > "Manage Plugins".</p>
+
+			<p>2. Configurar las credenciales de Git en Jenkins. Esto se
+				puede hacer en la sección "Manage Jenkins" > "Manage Credentials".</p>
+
+			<p>3. Crear un nuevo proyecto de Jenkins y configurar el origen
+				del repositorio. Para ello, selecciona la opción "Git" en la sección
+				"Source Code Management" y especifica la URL del repositorio Git,
+				así como las credenciales necesarias para acceder al mismo.</p>
+
+			<p>4. Configurar las opciones de compilación y pruebas en
+				Jenkins. Esto se puede hacer en la sección "Build" del proyecto de
+				Jenkins.</p>
+
+			<p>5. Configurar el proceso de integración continua. Para ello,
+				se puede utilizar el plugin "Pipeline Plugin" de Jenkins para
+				definir una canalización de integración continua basada en Git. Esta
+				canalización puede incluir etapas de compilación, pruebas, análisis
+				de código, generación de informes y despliegue.</p>
+
+			<p>6. Configurar notificaciones y alertas en caso de fallos en la
+				integración continua. Esto se puede hacer mediante el uso de plugins
+				de Jenkins, como "Email Extension Plugin", para enviar
+				notificaciones por correo electrónico o mediante integraciones con
+				herramientas externas, como Slack o HipChat.</p>
+
+			<p>Con estos pasos, deberías ser capaz de integrar Jenkins con
+				herramientas de gestión de versiones basadas en Git y utilizar la
+				integración continua para automatizar el proceso de construcción,
+				pruebas y despliegue de tu proyecto de software. Es importante tener
+				en cuenta que la configuración puede variar según las necesidades
+				específicas del proyecto y del entorno de desarrollo.</p>
+
+
+
+
+
+		</div>
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de estrategias de ramificación y fusión en proyectos Git</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>1. Crear una rama principal (por ejemplo, "main" o "master")
+				que contenga el código de producción estable.</p>
+
+			<p>2. Crear una rama de desarrollo (por ejemplo, "develop") que
+				se derive de la rama principal y que contenga el código en
+				desarrollo.</p>
+
+			<p>3. Crear ramas de características (por ejemplo,
+				"feature/new-feature") que se deriven de la rama de desarrollo y que
+				contengan el código para las nuevas funcionalidades.</p>
+
+			<p>4. Fusionar las ramas de características en la rama de
+				desarrollo una vez que las funcionalidades estén completas y hayan
+				sido probadas.</p>
+
+			<p>5. Realizar pruebas adicionales en la rama de desarrollo para
+				asegurarse de que todas las funcionalidades se integran
+				correctamente.</p>
+
+			<p>6. Fusionar la rama de desarrollo en la rama principal una vez
+				que todas las pruebas hayan sido superadas y se haya verificado que
+				el código en la rama de desarrollo es estable.</p>
+
+			<p>Es importante tener en cuenta que estas son solo algunas de
+				las estrategias de ramificación y fusión que se pueden utilizar en
+				proyectos Git. La elección de la estrategia adecuada dependerá de
+				las necesidades específicas del proyecto y del equipo de desarrollo.
+				También es importante seguir las mejores prácticas de Git para
+				evitar problemas con la gestión de versiones y la colaboración en
+				equipo.</p>
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración de
+				estrategias de ramificación en Jenkins para proyectos Spring Boot</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>1. Crear una rama principal (por ejemplo, "main" o "master")
+				que contenga el código de producción estable.</p>
+
+			<p>2. Crear una rama de desarrollo (por ejemplo, "develop") que
+				se derive de la rama principal y que contenga el código en
+				desarrollo.</p>
+
+			<p>3. Crear ramas de características (por ejemplo,
+				"feature/new-feature") que se deriven de la rama de desarrollo y que
+				contengan el código para las nuevas funcionalidades.</p>
+
+			<p>4. Configurar Jenkins para realizar compilaciones y pruebas
+				automáticamente en la rama de desarrollo cada vez que se produzca un
+				cambio en el código.</p>
+
+			<p>5. Configurar Jenkins para realizar compilaciones y pruebas en
+				las ramas de características de forma separada.</p>
+
+			<p>6. Configurar Jenkins para fusionar automáticamente las ramas
+				de características en la rama de desarrollo una vez que se hayan
+				completado las funcionalidades y se hayan pasado las pruebas.</p>
+
+			<p>7. Configurar Jenkins para realizar pruebas adicionales en la
+				rama de desarrollo para asegurarse de que todas las funcionalidades
+				se integran correctamente.</p>
+
+			<p>8. Configurar Jenkins para fusionar automáticamente la rama de
+				desarrollo en la rama principal una vez que todas las pruebas hayan
+				sido superadas y se haya verificado que el código en la rama de
+				desarrollo es estable.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de ramas
+				y etiquetas en Git con Jenkins</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>1. Crear una rama principal (por ejemplo, "main" o "master")
+				que contenga el código de producción estable.</p>
+
+			<p>2. Crear una rama de desarrollo (por ejemplo, "develop") que
+				se derive de la rama principal y que contenga el código en
+				desarrollo.</p>
+
+			<p>3. Crear ramas de características (por ejemplo,
+				"feature/new-feature") que se deriven de la rama de desarrollo y que
+				contengan el código para las nuevas funcionalidades.</p>
+
+			<p>4. Configurar Jenkins para realizar compilaciones y pruebas
+				automáticamente en la rama de desarrollo cada vez que se produzca un
+				cambio en el código.</p>
+
+			<p>5. Configurar Jenkins para realizar compilaciones y pruebas en
+				las ramas de características de forma separada.</p>
+
+			<p>6. Configurar Jenkins para fusionar automáticamente las ramas
+				de características en la rama de desarrollo una vez que se hayan
+				completado las funcionalidades y se hayan pasado las pruebas.</p>
+
+			<p>7. Configurar Jenkins para realizar pruebas adicionales en la
+				rama de desarrollo para asegurarse de que todas las funcionalidades
+				se integran correctamente.</p>
+
+			<p>8. Configurar Jenkins para fusionar automáticamente la rama de
+				desarrollo en la rama principal una vez que todas las pruebas hayan
+				sido superadas y se haya verificado que el código en la rama de
+				desarrollo es estable.</p>
+
+			<p>9. Crear etiquetas (por ejemplo, "v1.0.0") en la rama
+				principal para marcar versiones estables del código.</p>
+
+			<p>10. Configurar Jenkins para crear automáticamente etiquetas
+				cuando se hace un push a la rama principal y se pasa la fase de
+				pruebas de integración.</p>
+
+			<p>11. Configurar Jenkins para generar informes y artefactos
+				específicos de la etiqueta, como paquetes de instalación o archivos
+				de registro de cambios.</p>
+
+			<p>La gestión de ramas y etiquetas en Git es importante para
+				mantener un historial claro del desarrollo del proyecto y para
+				identificar versiones estables del código. Jenkins puede automatizar
+				muchas de las tareas de gestión de versiones, lo que ahorra tiempo y
+				reduce los errores humanos. Es importante seguir las mejores
+				prácticas de Git y Jenkins para evitar problemas con la gestión de
+				versiones y la integración continua.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Implementación
+				de flujos de trabajo de ramificación con Git y Jenkins</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>1. Crear una rama principal (por ejemplo, "main" o "master")
+				que contenga el código de producción estable.</p>
+
+			<p>2. Crear una rama de desarrollo (por ejemplo, "develop") que
+				se derive de la rama principal y que contenga el código en
+				desarrollo.</p>
+
+			<p>3. Crear ramas de características (por ejemplo,
+				"feature/new-feature") que se deriven de la rama de desarrollo y que
+				contengan el código para las nuevas funcionalidades.</p>
+
+			<p>4. Configurar Jenkins para realizar compilaciones y pruebas
+				automáticamente en la rama de desarrollo cada vez que se produzca un
+				cambio en el código.</p>
+
+			<p>5. Configurar Jenkins para realizar compilaciones y pruebas en
+				las ramas de características de forma separada.</p>
+
+			<p>6. Configurar Jenkins para fusionar automáticamente las ramas
+				de características en la rama de desarrollo una vez que se hayan
+				completado las funcionalidades y se hayan pasado las pruebas.</p>
+
+			<p>7. Configurar Jenkins para realizar pruebas adicionales en la
+				rama de desarrollo para asegurarse de que todas las funcionalidades
+				se integran correctamente.</p>
+
+			<p>8. Configurar Jenkins para fusionar automáticamente la rama de
+				desarrollo en la rama principal una vez que todas las pruebas hayan
+				sido superadas y se haya verificado que el código en la rama de
+				desarrollo es estable.</p>
+
+			<p>9. Crear una rama de lanzamiento (por ejemplo,
+				"release/v1.0.0") a partir de la rama de desarrollo cuando se acerca
+				una fecha de lanzamiento.</p>
+
+			<p>10. Realizar pruebas adicionales en la rama de lanzamiento
+				para asegurarse de que el código sea estable y que esté lista para
+				ser lanzada.</p>
+
+			<p>11. Crear una etiqueta en la rama de lanzamiento (por ejemplo,
+				"v1.0.0") para marcar la versión estable del código.</p>
+
+			<p>12. Configurar Jenkins para generar informes y artefactos
+				específicos de la etiqueta, como paquetes de instalación o archivos
+				de registro de cambios.</p>
+
+			<p>13. Fusionar la rama de lanzamiento en la rama principal y en
+				la rama de desarrollo una vez que se ha lanzado la versión.</p>
+
+			<p>Este flujo de trabajo de ramificación con Git y Jenkins es
+				conocido como Gitflow y es ampliamente utilizado en proyectos de
+				software. Permite una gestión clara de las diferentes etapas del
+				desarrollo y garantiza que el código sea estable y esté listo para
+				ser lanzado. Jenkins puede automatizar muchas de las tareas de
+				Gitflow, lo que ahorra tiempo y reduce los errores humanos. Es
+				importante seguir las mejores prácticas de Git y Jenkins para evitar
+				problemas con la gestión de versiones y la integración continua.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 id="h1-texto-enunciado">Uso de Jenkins para la
+				automatización de pruebas de integración y despliegue</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>Jenkins puede ser utilizado para la automatización de pruebas
+				de integración y despliegue de aplicaciones de manera continua.</p>
+
+			<p>Para la automatización de pruebas de integración, se pueden
+				crear jobs en Jenkins que ejecuten los casos de prueba definidos en
+				un framework de pruebas. Estos jobs pueden ser configurados para que
+				se ejecuten automáticamente después de la finalización de un job de
+				construcción, garantizando que se realicen pruebas de integración
+				cada vez que se realiza una nueva construcción de la aplicación.</p>
+
+			<p>Para la automatización de despliegues, Jenkins puede ser
+				configurado para que realice despliegues automáticos de la
+				aplicación en un ambiente de pruebas o producción. Esto se puede
+				lograr mediante la integración de plugins de despliegue en Jenkins y
+				la configuración de los parámetros necesarios para realizar el
+				despliegue de manera automatizada.</p>
+
+			<p>Jenkins también ofrece la posibilidad de integrar herramientas
+				de análisis estático de código y análisis de seguridad en los flujos
+				de trabajo de construcción y despliegue, lo que permite garantizar
+				la calidad y seguridad del código entregado.</p>
+
+
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración de
+				pruebas automatizadas en aplicaciones Spring Boot</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>En una aplicación Spring Boot se pueden configurar pruebas
+				automatizadas mediante el uso de frameworks de pruebas como JUnit,
+				Mockito, y Spring Test.</p>
+
+			<p>Para configurar pruebas automatizadas en una aplicación Spring
+				Boot en Jenkins, se pueden seguir los siguientes pasos:</p>
+
+			<p>1. Crear un job en Jenkins para la construcción de la
+				aplicación Spring Boot.</p>
+
+			<p>2. Configurar el job de construcción para que incluya la
+				ejecución de pruebas automatizadas.</p>
+
+			<p>3. Definir los frameworks de pruebas a utilizar en la
+				aplicación Spring Boot.</p>
+
+			<p>4. Escribir y ejecutar pruebas automatizadas utilizando los
+				frameworks definidos.</p>
+
+			<p>5. Configurar el job de construcción para que falle si alguna
+				prueba automatizada falla, garantizando la calidad del código
+				entregado.</p>
+
+			<p>6. Configurar la ejecución de pruebas automatizadas en un
+				ambiente de integración continua, de manera que se ejecuten
+				automáticamente después de cada construcción.</p>
+
+			<p>Con estos pasos, se puede garantizar la calidad y
+				funcionalidad de la aplicación Spring Boot mediante pruebas
+				automatizadas en Jenkins.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de
+				reportes y resultados de pruebas en Jenkins</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Jenkins proporciona varias herramientas para la gestión de
+				reportes y resultados de pruebas, lo que ayuda a los equipos de
+				desarrollo a identificar y solucionar problemas en el código.</p>
+
+			<p>Entre las herramientas de gestión de reportes y resultados de
+				pruebas disponibles en Jenkins se incluyen:</p>
+
+			<p>1. Integración con frameworks de pruebas como JUnit, TestNG, y
+				otros, lo que permite la generación de reportes detallados sobre el
+				resultado de las pruebas.</p>
+
+			<p>2. Integración con herramientas de análisis de código como
+				SonarQube, lo que permite identificar problemas de calidad y
+				seguridad en el código.</p>
+
+			<p>3. Integración con herramientas de seguimiento de problemas
+				como JIRA, lo que permite vincular problemas encontrados durante las
+				pruebas con incidencias en el sistema de seguimiento de problemas.</p>
+
+			<p>4. Integración con herramientas de generación de informes como
+				JasperReports, lo que permite generar informes personalizados sobre
+				el resultado de las pruebas.</p>
+
+			<p>Para aprovechar al máximo estas herramientas, es importante
+				configurar adecuadamente Jenkins para que pueda recibir, analizar y
+				presentar los resultados de las pruebas. De esta forma, los equipos
+				de desarrollo pueden obtener información valiosa sobre el
+				rendimiento y la calidad del código, y tomar medidas para mejorarlos
+				en caso de ser necesario.</p>
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>

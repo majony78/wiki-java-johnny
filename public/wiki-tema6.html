@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test HTLML</title>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous" />
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">WIKI-JAVA-JOHNNY</a>
+
+			<!-- Botón para el colapso del navbar en dispositivos móviles -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarResponsive" aria-controls="navbarResponsive"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+
+
+
+				<ul class="navbar-nav ml-auto">
+					<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button"
+							id="dropdownMenuButton" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">Temas</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<a class="dropdown-item" href="wiki-tema1.html">Tema1</a> <a
+								class="dropdown-item" href="wiki-tema2.html">Tema2</a> <a
+								class="dropdown-item" href="wiki-tema3.html">Tema3</a> <a
+								class="dropdown-item" href="wiki-tema4.html">Tema4</a> <a
+								class="dropdown-item" href="wiki-tema5.html">Tema5</a> <a
+								class="dropdown-item" href="wiki-tema6.html">Tema6</a> <a
+								class="dropdown-item" href="wiki-tema7.html">Tema7</a> <a
+								class="dropdown-item" href="wiki-tema8.html">Tema8</a> <a
+								class="dropdown-item" href="wiki-tema9.html">Tema9</a> <a
+								class="dropdown-item" href="wiki-tema10.html">Tema10</a>
+						</div>
+					</div>
+
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="container-central-2 container-fluid ">
+
+
+
+
+		<div class="contendor-texto-tema">
+			<h1 class="texto-tema text-center">Tema 6</h1>
+			<h3 class="texto-tema-h3 text-center">Oracle 18g administración
+				avanzada</h3>
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Introducción a
+				Oracle 18c: características y novedades</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>Oracle 18c es la versión más reciente de la base de datos de
+				Oracle. A continuación, se presentan algunas de las características
+				y novedades más destacadas:</p>
+
+			<p>1. Multitenant: la arquitectura multitenant permite que una
+				única instancia de la base de datos de Oracle sea utilizada por
+				múltiples usuarios, mejorando la eficiencia y reduciendo los costos.</p>
+
+			<p>2. Machine Learning: Oracle 18c incluye una serie de
+				características de aprendizaje automático que permiten a los
+				usuarios descubrir patrones y tendencias en los datos, lo que puede
+				ser útil en una variedad de aplicaciones.</p>
+
+			<p>3. Almacenamiento de objetos: Oracle 18c permite el
+				almacenamiento de objetos directamente en la base de datos, lo que
+				permite un acceso más rápido y eficiente a los datos.</p>
+
+			<p>4. Seguridad mejorada: la seguridad de la base de datos se ha
+				mejorado en Oracle 18c con características como el cifrado
+				automático de datos y la autenticación de múltiples factores.</p>
+
+			<p>5. Rendimiento mejorado: Oracle 18c ofrece mejoras de
+				rendimiento significativas en comparación con versiones anteriores,
+				lo que permite una mayor eficiencia en el procesamiento de grandes
+				cantidades de datos.</p>
+
+			<p>Oracle 18c ofrece una serie de características y novedades que
+				mejoran significativamente la eficiencia, el rendimiento y la
+				seguridad de la base de datos, lo que la convierte en una opción
+				atractiva para las empresas que buscan mejorar su infraestructura de
+				datos.</p>
+
+
+		</div>
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Configuración
+				avanzada de parámetros de la base de datos</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+
+			<p>La configuración avanzada de parámetros de la base de datos es
+				una tarea crítica para lograr un rendimiento óptimo y una
+				disponibilidad confiable. Estos parámetros pueden afectar
+				significativamente la capacidad de la base de datos para manejar la
+				carga de trabajo y responder a los cambios en el entorno.
+			<p>Algunos de los parámetros más importantes incluyen:
+			<p>- El tamaño del buffer cache: este parámetro determina cuántos
+				bloques de datos se pueden almacenar en la memoria caché de la base
+				de datos. Un valor más alto puede mejorar el rendimiento de las
+				operaciones de lectura de datos, mientras que un valor más bajo
+				puede ser beneficioso para reducir la cantidad de memoria utilizada
+				por la base de datos.
+			<p>- El tamaño del shared pool: este parámetro controla el tamaño
+				del área de memoria compartida utilizada para almacenar los objetos
+				de la base de datos, como procedimientos almacenados y paquetes. Un
+				tamaño más alto puede mejorar el rendimiento de las consultas, pero
+				también puede consumir más memoria del sistema.
+			<p>- El número de conexiones concurrentes permitidas: este
+				parámetro determina cuántos usuarios pueden conectarse a la base de
+				datos al mismo tiempo. Un valor más alto puede mejorar la capacidad
+				de la base de datos para manejar picos de carga de trabajo, pero
+				también puede consumir más recursos del sistema.
+			<p>- El umbral de tiempo de espera de bloqueo: este parámetro
+				controla la cantidad de tiempo que un proceso de base de datos debe
+				esperar antes de abortar una transacción debido a bloqueos de
+				recursos. Un valor más bajo puede mejorar la capacidad de la base de
+				datos para manejar transacciones concurrentes, pero también puede
+				aumentar la posibilidad de errores de bloqueo.
+			<p>Es importante tener en cuenta que los valores de estos
+				parámetros deben ajustarse cuidadosamente en función de los
+				requisitos específicos de la aplicación y la carga de trabajo de la
+				base de datos. La configuración incorrecta de estos parámetros puede
+				tener un impacto negativo significativo en el rendimiento y la
+				estabilidad de la base de datos.
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión avanzada
+				de tablespaces y archivos de datos</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>La gestión avanzada de tablespaces y archivos de datos es
+				esencial para el rendimiento y la escalabilidad de una base de datos
+				Oracle. Algunas técnicas y prácticas comunes incluyen:</p>
+
+			<p>- Separar los tablespaces de datos y de índices: esto puede
+				mejorar el rendimiento de las consultas, ya que reduce la necesidad
+				de buscar en los índices y en los datos al mismo tiempo.</p>
+			<p>- Utilizar tablespaces pequeños y gestionarlos cuidadosamente:
+				esto permite un control más preciso de la utilización del espacio en
+				disco y facilita la tarea de realizar copias de seguridad y
+				restauraciones.</p>
+			<p>- Asignar diferentes tipos de segmentos (como tablas, índices
+				y LOBs) a tablespaces específicos: esto permite una gestión más
+				eficiente del espacio y un mejor rendimiento para diferentes tipos
+				de consultas.</p>
+			<p>- Utilizar compresión de datos: esto puede reducir
+				significativamente el tamaño de los archivos de datos y mejorar el
+				rendimiento al reducir la cantidad de datos que se deben leer y
+				escribir en el disco.</p>
+			<p>- Utilizar el almacenamiento en línea y fuera de línea: esto
+				permite mover segmentos individuales de un tablespace a otro sin
+				tener que realizar una copia de seguridad y restauración completa de
+				la base de datos.</p>
+			<p>- Utilizar tablespaces temporales para gestionar la memoria
+				temporal utilizada por las operaciones de clasificación y unión:
+				esto puede mejorar significativamente el rendimiento de las
+				operaciones que requieren grandes cantidades de memoria temporal.</p>
+			<p>- Utilizar archivos de datos en ASM (Automatic Storage
+				Management): esto permite una gestión más fácil y eficiente del
+				almacenamiento en disco, así como una mayor escalabilidad y
+				rendimiento.</p>
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión avanzada
+				de usuarios, roles y privilegios</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>La gestión avanzada de usuarios, roles y privilegios en Oracle
+				18c permite una mayor flexibilidad y control en la asignación de
+				permisos y acceso a los recursos de la base de datos.</p>
+
+			<p>En cuanto a los usuarios, se pueden crear y administrar
+				usuarios locales y globales, con opciones para establecer políticas
+				de contraseñas seguras y configurar la expiración de contraseñas.
+				Además, se pueden establecer perfiles de usuario para limitar el uso
+				de recursos del sistema y configurar la auditoría de sesiones de
+				usuario para fines de seguridad.</p>
+
+			<p>En lo que respecta a los roles, se pueden crear y administrar
+				roles y privilegios personalizados para satisfacer las necesidades
+				específicas de la aplicación y el entorno de la base de datos. Los
+				roles pueden tener privilegios de sistema y/o privilegios de objeto,
+				lo que permite una granularidad fina en la asignación de permisos.</p>
+
+			<p>En términos de privilegios, Oracle 18c proporciona un amplio
+				conjunto de privilegios de sistema y objeto para controlar el acceso
+				a los recursos de la base de datos. Además, se pueden crear y
+				asignar privilegios personalizados para satisfacer necesidades
+				específicas.</p>
+
+			<p>La gestión avanzada de usuarios, roles y privilegios en Oracle
+				18c permite una mayor flexibilidad y control en la asignación de
+				permisos y acceso a los recursos de la base de datos, lo que
+				contribuye a mejorar la seguridad y la eficiencia de la gestión de
+				la base de datos.
+			<p>ejemplo:</p>
+
+			<pre>
+<code>-- Creación de un nuevo usuario
+CREATE USER nuevo_usuario IDENTIFIED BY mi_contraseña;
+
+-- Concesión de permisos a un usuario
+GRANT CONNECT, RESOURCE, CREATE SESSION TO nuevo_usuario;
+
+-- Revocación de permisos a un usuario
+REVOKE CREATE SESSION FROM nuevo_usuario;
+
+-- Creación de un nuevo rol
+CREATE ROLE mi_rol;
+
+-- Concesión de permisos a un rol
+GRANT CREATE TABLE, CREATE VIEW, CREATE PROCEDURE TO mi_rol;
+
+-- Concesión de un rol a un usuario
+GRANT mi_rol TO nuevo_usuario;
+
+-- Revocación de un rol a un usuario
+REVOKE mi_rol FROM nuevo_usuario;
+
+-- Visualización de los roles y permisos de un usuario
+SELECT * FROM USER_ROLE_PRIVS WHERE USERNAME = 'nuevo_usuario';
+
+-- Visualización de los usuarios y roles de la base de datos
+SELECT * FROM DBA_USERS;
+SELECT * FROM DBA_ROLES;
+
+
+
+
+
+Gestión de esquemas y objetos de base de datos
+
+
+
+
+-- Creación de un nuevo esquema
+CREATE SCHEMA nombre_esquema;
+
+-- Creación de una nueva tabla en el esquema
+CREATE TABLE nombre_esquema.nombre_tabla (
+    columna1 tipo_dato1,
+    columna2 tipo_dato2,
+    ...,
+    columnaN tipo_datoN
+);
+
+-- Modificación de una tabla
+ALTER TABLE nombre_esquema.nombre_tabla
+ADD COLUMN nueva_columna tipo_dato;
+
+-- Eliminación de una tabla
+DROP TABLE nombre_esquema.nombre_tabla;
+
+-- Creación de una vista
+CREATE VIEW nombre_vista AS
+SELECT columna1, columna2, ..., columnaN
+FROM nombre_esquema.nombre_tabla
+WHERE condicion;
+
+-- Modificación de una vista
+ALTER VIEW nombre_vista AS
+SELECT columna1, columna2, ..., columnaN
+FROM nombre_esquema.nombre_tabla
+WHERE nueva_condicion;
+
+-- Eliminación de una vista
+DROP VIEW nombre_vista;
+
+-- Creación de un índice en una tabla
+CREATE INDEX nombre_indice
+ON nombre_esquema.nombre_tabla (columna);
+
+-- Eliminación de un índice en una tabla
+DROP INDEX nombre_indice;
+
+-- Renombrar un objeto de base de datos
+ALTER nombre_tipo_objeto nombre_viejo RENAME TO nombre_nuevo;
+</code>
+</pre>
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Monitoreo y
+				ajuste avanzado del rendimiento de la base de datos</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>La gestión del rendimiento de la base de datos es crucial para
+				garantizar una alta disponibilidad y capacidad de respuesta. A
+				continuación, se presentan algunas técnicas avanzadas para el
+				monitoreo y ajuste del rendimiento:</p>
+
+			<p>- Uso de herramientas de monitoreo: Oracle proporciona una
+				variedad de herramientas de monitoreo para ayudar a identificar
+				cuellos de botella y problemas de rendimiento en la base de datos.
+				Algunas de estas herramientas incluyen el Enterprise Manager, AWR
+				(Automatic Workload Repository) y ASH (Active Session History).</p>
+
+			<p>- Análisis de estadísticas: Las estadísticas proporcionan
+				información importante sobre la base de datos y su rendimiento.
+				Algunas estadísticas útiles incluyen las tasas de lectura y
+				escritura de disco, la cantidad de memoria utilizada y las
+				estadísticas de bloqueo.</p>
+
+			<p>- Ajuste de la configuración del SGA: El SGA (System Global
+				Area) es una región de memoria compartida que Oracle utiliza para
+				almacenar datos y controlar el acceso a la base de datos. Ajustar la
+				configuración del SGA puede mejorar significativamente el
+				rendimiento de la base de datos.</p>
+
+			<p>- Optimización de consultas: Las consultas mal diseñadas
+				pueden ser una causa común de problemas de rendimiento. Para
+				optimizar las consultas, se pueden utilizar herramientas como el
+				Planificador de consultas de Oracle o el Optimizador de consultas.</p>
+
+			<p>- Uso de índices: Los índices son estructuras de datos que
+				mejoran el rendimiento de las consultas al permitir un acceso más
+				rápido a los datos. Utilizar índices adecuados puede mejorar
+				significativamente el rendimiento de la base de datos.</p>
+
+			<p>- Monitoreo del uso de la CPU y la memoria: El uso excesivo de
+				la CPU y la memoria puede causar problemas de rendimiento.
+				Monitorear regularmente el uso de la CPU y la memoria y ajustar la
+				configuración de la base de datos en consecuencia puede ayudar a
+				evitar estos problemas.</p>
+
+			<p>- Identificación y eliminación de bloqueos: Los bloqueos
+				pueden afectar negativamente el rendimiento de la base de datos al
+				impedir el acceso a los datos. Identificar y eliminar bloqueos es
+				esencial para garantizar un rendimiento óptimo.</p>
+
+			<p>- Uso de la partición de tablas: La partición de tablas es una
+				técnica que divide una tabla grande en partes más pequeñas, lo que
+				puede mejorar significativamente el rendimiento de las consultas.</p>
+
+			<p>Estas son solo algunas técnicas avanzadas para el monitoreo y
+				ajuste del rendimiento de la base de datos. Es importante seguir las
+				mejores prácticas y ajustar la configuración de la base de datos
+				según sea necesario para garantizar un rendimiento óptimo y una alta
+				disponibilidad.</p>
+
+
+			<p>-- Monitoreo del rendimiento</p>
+
+			<p>-- Identificar los SQL statements más lentos:</p>
+			<pre>
+<code>SELECT *
+FROM   (SELECT *
+        FROM   (SELECT sql_id,
+                       elapsed_time / 1000000     elapsed_time_secs,
+                       cpu_time / 1000000         cpu_time_secs,
+                       buffer_gets,
+                       disk_reads,
+                       executions,
+                       sql_text
+                FROM   v$sql
+                ORDER BY elapsed_time DESC)
+        WHERE  ROWNUM &lt;= 10);
+
+-- Identificar los eventos más comunes que esperan los procesos de la base de datos:
+SELECT *
+FROM   (SELECT event,
+               total_waits,
+               time_waited_micro / 1000000   time_waited_secs,
+               average_wait / 1000000        average_wait_secs
+        FROM   v$system_event
+        WHERE  event NOT LIKE '%RMAN%'
+        ORDER BY time_waited_micro DESC)
+WHERE  ROWNUM &lt;= 10;</code>
+
+
+-- Ajuste del rendimiento
+
+-- Utilizar el AWR (Automatic Workload Repository) para analizar el rendimiento de la base de datos:
+<code>SELECT *
+FROM   (SELECT begin_interval_time,
+               end_interval_time,
+               to_char((end_interval_time - begin_interval_time) * 24, 'FM9990.00')   duration_hours,
+               db_time / 1000000                                                         db_time_secs,
+               db_cpu / 1000000                                                          db_cpu_secs,
+               parse_time_cpu / 1000000                                                   parse_cpu_secs,
+               hard_parse_time_cpu / 1000000                                              hard_parse_cpu_secs,
+               iowait_time / 1000000                                                      iowait_time_secs,
+               total_wait_time / 1000000                                                  total_wait_time_secs,
+               time_waited / 1000000                                                      time_waited_secs,
+               average_wait / 1000000                                                     average_wait_secs,
+               logons_cumulative,
+               execute_count,
+               module,
+               action,
+               sql_id,
+               sql_text
+        FROM   dba_hist_snapshot sn,
+               dba_hist_sysmetric_summary m,
+               dba_hist_osstat o,
+               dba_hist_sqlstat s,
+               dba_hist_sqltext t
+        WHERE  sn.snap_id = m.snap_id
+               AND sn.snap_id = o.snap_id
+               AND sn.snap_id = s.snap_id
+               AND sn.snap_id = t.snap_id
+               AND m.metric_name = 'Database Time Per Sec'
+               AND o.stat_name = 'IDLE_TIME'
+               AND s.executions_delta > 0
+               AND s.parse_calls_delta > 0
+               AND s.snap_id = t.snap_id
+               AND s.sql_id = t.sql_id
+               AND end_interval_time > SYSDATE - 1
+        ORDER BY end_interval_time DESC)
+WHERE  ROWNUM &lt;= 10;</code>
+
+-- Utilizar el SQL Tuning Advisor para identificar y resolver problemas 
+de rendimiento en SQL statements específicos:
+
+<code>DECLARE
+   task_name    VARCHAR2(30);
+BEGIN
+   task_name := DBMS_SQLTUNE.CREATE_TUNING_TASK (
+                  sql_id           => '5d5x5hj8c1n55',
+                  scope            => DBMS_SQLTUNE.scope_comprehensive,
+                  time_limit       => 1200,
+                  task_name        => 'tune_sql');
+                  
+   DBMS_SQLTUNE.EXECUTE_TUNING_TASK(task_name);
+   
+   DBMS_SQLTUNE.DROP_TUNING_TASK(task_name);
+END;
+/</code>
+</pre>
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de la
+				memoria y del espacio compartido en la base de datos</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+			<p>La gestión de la memoria y del espacio compartido es un
+				aspecto importante en el rendimiento de la base de datos. Oracle 18c
+				proporciona varias herramientas y técnicas para optimizar y
+				gestionar el uso de la memoria y el espacio compartido.</p>
+
+			<p>Algunas de las herramientas y técnicas de gestión de la
+				memoria y del espacio compartido en Oracle 18c incluyen:
+			<p>- Uso de la SGA (System Global Area): la SGA es un área de
+				memoria compartida utilizada por la base de datos para almacenar
+				información y datos importantes. La configuración de la SGA puede
+				ser ajustada para mejorar el rendimiento de la base de datos.</p>
+			<p>- Uso del PGA (Program Global Area): la PGA es una memoria
+				dedicada a cada proceso individual de Oracle. La PGA puede ser
+				configurada para optimizar el rendimiento de una consulta o proceso
+				específico.</p>
+			<p>- Uso del buffer cache: el buffer cache es una memoria
+				intermedia utilizada para almacenar los bloques de datos más
+				recientes y utilizados en la base de datos. La configuración del
+				buffer cache puede ser ajustada para mejorar el rendimiento de las
+				consultas y la recuperación de datos.</p>
+			<p>- Uso de la función Automatic Shared Memory Management (ASMM):
+				ASMM es una función que ajusta automáticamente el tamaño de la SGA y
+				sus componentes en función de la carga y demanda de la base de
+				datos.</p>
+			<p>- Uso de la función Automatic Memory Management (AMM): AMM es
+				una función que ajusta automáticamente el tamaño de la PGA en
+				función de la carga y demanda de la base de datos.</p>
+			<p>- Uso de la función Shared Server: la función Shared Server
+				permite compartir un número limitado de conexiones de red entre
+				varios usuarios de la base de datos, lo que reduce la carga de la
+				memoria del sistema y mejora el rendimiento general de la base de
+				datos.</p>
+			<p>- Uso de las vistas de rendimiento: Oracle 18c proporciona
+				varias vistas de rendimiento que permiten a los administradores de
+				bases de datos monitorear y ajustar el rendimiento de la memoria y
+				el espacio compartido de la base de datos.</p>
+			<p>la gestión de la memoria y del espacio compartido en Oracle
+				18c es crucial para el rendimiento y la estabilidad de la base de
+				datos. Los administradores de bases de datos deben estar
+				familiarizados con las herramientas y técnicas disponibles para
+				optimizar y gestionar el uso de la memoria y el espacio compartido
+				en la base de datos.</p>
+
+
+
+
+
+		</div>
+
+
+
+
+
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Administración
+				avanzada de la seguridad en Oracle 18c</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>La administración avanzada de la seguridad en Oracle 18c
+				incluye una amplia variedad de características y herramientas
+				diseñadas para proteger los datos y recursos de la base de datos.
+				Algunas de estas características incluyen:</p>
+			<p>- Autenticación y autorización: Oracle 18c soporta varios
+				métodos de autenticación, incluyendo contraseñas, autenticación
+				integrada con el sistema operativo y certificados digitales. La
+				autorización se puede configurar a nivel de objeto y de usuario para
+				limitar el acceso a recursos específicos.</p>
+			<p>- Control de acceso: Oracle 18c ofrece una variedad de
+				mecanismos de control de acceso, incluyendo listas de control de
+				acceso (ACL), políticas de seguridad y roles.</p>
+			<p>- Auditoría: Oracle 18c permite la auditoría de acciones
+				específicas en la base de datos, incluyendo inicio de sesión,
+				creación de usuarios y cambios en objetos de base de datos.</p>
+			<p>- Cifrado: Oracle 18c ofrece varias opciones de cifrado para
+				proteger los datos en tránsito y en reposo, incluyendo SSL/TLS, TDE
+				(Transparent Data Encryption) y cifrado de columna.</p>
+			<p>- Gestión de contraseñas: Oracle 18c permite la configuración
+				de políticas de contraseñas, incluyendo la complejidad y la
+				caducidad de las contraseñas.</p>
+			<p>- Protección de datos sensibles: Oracle 18c ofrece
+				herramientas para proteger datos sensibles, incluyendo
+				enmascaramiento de datos y etiquetado de datos sensibles.</p>
+			<p>Los administradores de bases de datos deben estar
+				familiarizados con estas herramientas y técnicas para garantizar la
+				protección de los datos y recursos de la base de datos.</p>
+
+
+
+		</div>
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Uso avanzado de
+				la herramienta SQL Developer</h1>
+		</div>
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>El uso avanzado de la herramienta SQL Developer de Oracle
+				puede ayudar a los desarrolladores y administradores de bases de
+				datos a ser más eficientes en su trabajo diario. Algunas de las
+				características y técnicas avanzadas que se pueden utilizar en SQL
+				Developer incluyen:</p>
+
+			<p>1. Creación de consultas complejas: SQL Developer permite
+				crear consultas SQL complejas y utilizar funciones avanzadas como
+				subconsultas, agregaciones y join múltiples para acceder y manipular
+				datos en la base de datos.</p>
+
+			<p>2. Generación de scripts y automatización de tareas: SQL
+				Developer tiene la capacidad de generar scripts para tareas
+				repetitivas y automatizar la ejecución de tareas de base de datos
+				utilizando el Programador de tareas.</p>
+
+			<p>3. Depuración de PL/SQL: SQL Developer incluye herramientas
+				avanzadas de depuración para ayudar a encontrar y corregir errores
+				en código PL/SQL.</p>
+
+			<p>4. Creación y edición de objetos de base de datos: SQL
+				Developer permite crear y editar objetos de base de datos como
+				tablas, vistas, procedimientos almacenados y funciones directamente
+				desde la herramienta.</p>
+
+			<p>5. Monitoreo y ajuste del rendimiento: SQL Developer incluye
+				herramientas para monitorear el rendimiento de la base de datos y
+				realizar ajustes para mejorar el rendimiento, como analizar y
+				ajustar el plan de ejecución de consultas.</p>
+
+			<p>6. Integración con sistemas de control de versiones: SQL
+				Developer tiene la capacidad de integrarse con sistemas de control
+				de versiones como Git y Subversion para manejar los cambios en el
+				código SQL y PL/SQL.</p>
+
+			<p>En resumen, SQL Developer es una herramienta muy potente y
+				versátil para trabajar con bases de datos Oracle, y puede ser
+				utilizada para tareas avanzadas como la creación de consultas
+				complejas, la automatización de tareas, la depuración de PL/SQL y el
+				monitoreo del rendimiento de la base de datos. Los administradores
+				de bases de datos y desarrolladores pueden aprovechar estas
+				características avanzadas para mejorar su eficiencia y productividad
+				en el desarrollo y administración de bases de datos Oracle.</p>
+
+
+
+
+
+		</div>
+
+
+		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Estrategias de
+				alta disponibilidad y tolerancia a fallos en Oracle 18c</h1>
+		</div>
+
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>Algunas de las estrategias y herramientas de alta
+				disponibilidad y tolerancia a fallos en Oracle 18c incluyen:</p>
+
+			<p>- Real Application Clusters (RAC): RAC permite a múltiples
+				instancias de la base de datos Oracle ejecutarse en servidores
+				separados mientras comparten el mismo almacenamiento. Esto permite
+				una alta disponibilidad y escalabilidad horizontal.</p>
+
+			<p>- Data Guard: Data Guard permite la replicación de la base de
+				datos en tiempo real en una ubicación de recuperación remota. Esto
+				proporciona una copia de seguridad en caso de fallos del sistema o
+				desastres naturales.</p>
+
+			<p>- Oracle Grid Infrastructure: Grid Infrastructure proporciona
+				una capa de abstracción para la gestión de servidores y
+				almacenamiento. Incluye Oracle Clusterware y Oracle Automatic
+				Storage Management (ASM), lo que permite la gestión de múltiples
+				nodos de servidor y el almacenamiento compartido.</p>
+
+			<p>- Fast-Start Failover: Fast-Start Failover es una
+				característica de Data Guard que permite la conmutación por error
+				automática a un sitio secundario en caso de una falla crítica del
+				sitio principal.</p>
+
+			<p>- Oracle Maximum Availability Architecture (MAA): MAA es un
+				conjunto de prácticas recomendadas y herramientas de Oracle para
+				garantizar la máxima disponibilidad y protección de los datos.</p>
+
+			<p>Oracle 18c proporciona varias estrategias y herramientas para
+				garantizar la alta disponibilidad y la tolerancia a fallos en la
+				base de datos. Los administradores de bases de datos deben estar
+				familiarizados con estas herramientas y técnicas para garantizar la
+				continuidad del negocio y la protección de los datos.</p>
+
+
+
+
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>
