@@ -2234,14 +2234,14 @@ services:
 			<p>Para limitar el ancho de banda de red, se puede utilizar la
 				opción "--device" al crear el contenedor, por ejemplo:</p>
 
-			<p>
+			<pre>
 				<code>docker run --device=/dev/net/tun --cap-add=NET_ADMIN
 					--sysctl net.ipv6.conf.all.disable_ipv6=0 -e
 					INTERNAL_IP=&lt;IP_DEL_CONTENEDOR&gt; -e
 					INTERNAL_CIDR=&lt;RANGO_IPS&gt; -e
 					PEER_PORT=&lt;PUERTO_DEL_PEER&gt; --name= "NOMBRE_DEL_CONTENEDOR"
 					"IMAGEN"</code>
-			</p>
+			</pre>
 
 			<p>Esto limitará el contenedor a utilizar como máximo el ancho de
 				banda de red especificado.</p>
