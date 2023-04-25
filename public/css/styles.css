@@ -1,29 +1,3 @@
-@media (max-width: 992px) {
-.navbar-brand {
-font-size: 2.0em !important;
-
-}
-.dropdown-menu {
-position: static !important;
-width: auto !important;
-
-
-
-}
-.dropdown-menu a {
-font-size: 3em !important;
-padding: 5px 10px !important;
-}
-.navbar-expand-lg {
-max-width: 1200px !important;
-}
-.navbar-toggler {
-  font-size: 34px !important;
-
-
-}
-}
-
 
  .main-content {
       margin-left: 250px;
@@ -101,7 +75,7 @@ font-size: 2.8em;
 
 .nav-link.active {
   color: black;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .nav-link.active:hover {
@@ -190,19 +164,7 @@ code {
 
 
 
-#imagen-wiki {
-	width: 120px;
-	height: auto; /* Ajustar el tamaño vertical de la imagen automáticamente para mantener la proporción */
-	margin-left: 30px;
-}
 
-/* Media Query para pantallas más pequeñas */
-@media (max-width: 600px) {
-  #imagen-wiki {
-    width: 60px; /* Cambiar el tamaño horizontal de la imagen */
-    margin-left: 10px;
-  }
-}
 
 @media (max-width: 992px) {
   .dropdown-toggle {
@@ -275,25 +237,75 @@ hr {
   background-color: black !important;
 }
 
-@media (max-width: 991px) {
-  .sidebar-link {
-    font-size: 1.9em; /* Tamaño de fuente aumentado para pantallas más pequeñas */
-  }
-}
 
 .sidebar-link {
   position: relative;
-  left: 15px; /* Puedes ajustar este valor para mover el elemento a la derecha o izquierda */
-  font-size: 20px;
+  left: 13px; /* Puedes ajustar este valor para mover el elemento a la derecha o izquierda */
+  font-size: 30px !important;
   color: black !important;
 }
 .sidebar-link:hover {
  color: white !important;
+
+}
+
+@media (max-width: 991px) {
+  .sidebar-link {
+   font-size:50px !important;
+    left: 10px !important;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .nav-link.active {
-    font-size: 40px;
+    font-size: 50px;
     margin-left: 15px;
   }
+}
+#imagen-wiki {
+	width: 150px;
+	height: auto; /* Ajustar el tamaño vertical de la imagen automáticamente para mantener la proporción */
+	margin-left: 5px;
+	display: inline-block;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 992px) {
+  #imagen-wiki {
+    width: 180px; /* Cambiar el tamaño horizontal de la imagen */
+    margin-left: 10px;
+    
+  }
+}
+
+@media (max-width: 992px) {
+.navbar-brand {
+font-size: 2.0em !important;
+
+}
+.dropdown-menu {
+position: absolute !important;
+width: auto !important;
+
+
+
+}
+.dropdown-menu a {
+font-size: 3em !important;
+padding: 5px 10px !important;
+}
+.navbar-expand-lg {
+max-width: 1200px !important;
+}
+.navbar-toggler {
+  font-size: 34px !important;
+
+
+}
+}
+
+@media (max-width: 992px){
+.dropdown-menu.side {
+ font-size: 16px;
+}
 }
