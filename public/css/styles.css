@@ -1,3 +1,30 @@
+@media (max-width: 992px) {
+.navbar-brand {
+font-size: 2.5em !important;
+
+}
+.dropdown-menu {
+position: static !important;
+width: auto !important;
+
+
+
+}
+.dropdown-menu a {
+font-size: 2em !important;
+padding: 5px 10px !important;
+}
+.navbar-expand-lg {
+max-width: 1200px !important;
+}
+.navbar-toggler {
+  font-size: 34px !important;
+
+
+}
+}
+
+
  .main-content {
       margin-left: 250px;
       padding: 20px;
@@ -34,6 +61,15 @@
     width: 80px;
   }
 }
+@media (max-width: 992px) {
+.sidebar-nav {
+width: 220px;
+margin-top: 65px;
+}
+.sidebar-nav a {
+font-size: 2.8em;
+}
+}
 
 .container-central {
   margin-top: 70px;
@@ -51,7 +87,14 @@
     margin-top: 65px; /* Quita el margen superior para pantallas pequeñas */
   }
 }
-
+@media (max-width: 992px) {
+  .container-central {
+    margin-left: 0; /* Quita el margen izquierdo */
+    width: 100%; /* Ajusta el ancho al 100% */
+    padding: 50px; /* Ajusta el espacio de relleno interno para pantallas pequeñas */
+    margin-top: 65px; /* Quita el margen superior para pantallas pequeñas */
+  }
+}
 
 
 
@@ -88,6 +131,20 @@
   }
 }
 
+/* Estilos para pantallas pequeñas */
+@media (max-width: 992px) {
+  .content-h2.text-dark.fs-4 {
+
+    font-size: 50px; /* Reduce el tamaño de la fuente */
+    line-height: 1.6; /* Ajusta el espacio entre líneas */
+    margin-bottom: 10px; /* Añade un margen inferior para separar los títulos */
+    margin-left: 230px;
+    text-align: left;
+  }
+}
+
+
+
 .dropdown-menu {
   width: 50px; /* Define la anchura deseada */
 }
@@ -103,6 +160,16 @@
 .container-central-2{
 	margin-top: 60px;
 }
+@media (max-width: 992px) {
+  .container-central-2 {
+    margin-top: 150px;
+    font-size: 20px; /* Cambiar el valor a tu preferencia */
+  }
+}
+
+
+
+
 .texto-tema {
 	color: red;
 }
@@ -131,5 +198,65 @@ color: white;
   #imagen-wiki {
     width: 60px; /* Cambiar el tamaño horizontal de la imagen */
     margin-left: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dropdown-toggle {
+    font-size: 2.2rem !important;
+    padding: 0.5rem 1rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .container p {
+    font-size: 1.8em; /* ajusta el tamaño del texto */
+     
+  }
+  
+  .container {
+    padding: 20px; /* ajusta el padding del div */
+   
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+
+}
+
+@media (max-width: 992px) {
+  .texto-tema {
+    font-size: 3.5em;
+  }
+}
+@media (max-width: 992px) {
+  .texto-tema-h3 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 992px) {
+	#h1-texto-enunciado{
+	 font-size: 2.5em;
+}
+}
+
+
+@media (max-width: 992px) {
+.pre-dibujo-1 {
+    font-size: 1.4em !important;
+  }
+}
+
+@media (max-width: 992px) {
+.pre-dibujo-2 {
+    font-size: 1.8em !important;
+  }
+}
+
+@media (max-width: 992px) {
+ pre {
+    font-size: 1.5em !important;
+     overflow: auto !important;
   }
 }
