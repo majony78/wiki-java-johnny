@@ -175,7 +175,7 @@ code {
 
 @media (max-width: 992px) {
   .container p {
-    font-size: 1.8em; /* ajusta el tamaño del texto */
+    font-size: 2.0em; /* ajusta el tamaño del texto */
      
   }
   
@@ -191,18 +191,18 @@ code {
 
 @media (max-width: 992px) {
   .texto-tema {
-    font-size: 3.5em;
+    font-size: 3.9em;
   }
 }
 @media (max-width: 992px) {
   .texto-tema-h3 {
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
 }
 
 @media (max-width: 992px) {
 	#h1-texto-enunciado{
-	 font-size: 2.5em;
+	 font-size: 2.8em;
 }
 }
 
