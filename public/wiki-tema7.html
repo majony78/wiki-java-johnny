@@ -2751,7 +2751,62 @@ networks:
 
 		</div>
 
+	
+
 		<div class="enunciado-introduccion mt-5">
+			<h1 class="text-center" id="h1-texto-enunciado">Gestión de la
+				escalabilidad y alta disponibilidad en aplicaciones Docker Compose</h1>
+		</div>
+
+
+		<div class="container" style="background-color: #EEEBEB;">
+
+
+			<p>La gestión de la escalabilidad y alta disponibilidad en
+				aplicaciones Docker Compose se puede lograr mediante la
+				configuración de los servicios en el archivo docker-compose.yml.
+				Para escalar un servicio, se puede utilizar el comando
+				"docker-compose up --scale [servicio]=[número de instancias]".</p>
+
+			<p>Por ejemplo, si se tiene un servicio llamado "app" y se desea
+				escalarlo a 5 instancias, se puede ejecutar el siguiente comando:</p>
+
+			<p>
+				<code>docker-compose up --scale app=5</code>
+			</p>
+
+			<p>Para lograr alta disponibilidad, se pueden utilizar
+				estrategias de replicación y balanceo de carga. En Docker Compose,
+				se pueden especificar diferentes estrategias de balanceo de carga
+				para el servicio utilizando la opción "deploy".</p>
+
+			<p>Por ejemplo, se puede especificar que el servicio "app"
+				utilice la estrategia de balanceo de carga "replicated" y tener 3
+				réplicas:</p>
+			<pre>
+				<code>services:
+  app:
+    image: myapp:latest
+    deploy:
+      mode: replicated
+      replicas: 3
+      endpoint_mode: vip
+</code>
+			</pre>
+			<p>Además, se puede utilizar una herramienta externa de
+				orquestación de contenedores como Kubernetes o Docker Swarm para
+				gestionar la escalabilidad y alta disponibilidad en un entorno de
+				producción. Estas herramientas proporcionan funcionalidades
+				avanzadas de gestión de contenedores, incluyendo la recuperación
+				automática en caso de fallos y el equilibrio de carga.</p>
+
+
+
+
+
+		</div>
+		
+			<div class="enunciado-introduccion mt-5">
 			<h1 class="text-center" id="h1-texto-enunciado">Integración de
 				Docker Compose con herramientas de gestión de infraestructuras</h1>
 		</div>
@@ -2809,17 +2864,19 @@ secrets:
 				todos los nodos de la red (deploy.mode: global). Además, se
 				especifican las variables de entorno necesarias para conectarse a la
 				base de datos, incluyendo una variable de entorno que se define a
-				partir de un secreto (DB_PASSWORD=${DB_PASSWORD}). Se utiliza una
+				partir de un secreto </p> <pre>
+				<code>(DB_PASSWORD=${DB_PASSWORD})</code></pre><p> Se utiliza una
 				red llamada app_network para conectar los servicios.</p>
 
 			<p>El servicio db está construido a partir de la imagen de MySQL
 				versión 8.0 y también se especifican las variables de entorno
 				necesarias para la base de datos, incluyendo la contraseña de root,
-				que se define a partir del secreto
-				(MYSQL_ROOT_PASSWORD=${DB_PASSWORD}).</p>
-			Se utiliza el mismo secreto db_password para la contraseña del
-			usuario de la base de datos.
-			</p>
+				que se define a partir del secreto</p> <pre>
+				<code>
+				(MYSQL_ROOT_PASSWORD=${DB_PASSWORD}</code></pre>
+				
+			<p>Se utiliza el mismo secreto db_password para la contraseña del
+				usuario de la base de datos.</p>
 
 			<p>Por último, se define el secreto db_password en la sección
 				secrets, indicando la ubicación del archivo que contiene la
@@ -2853,7 +2910,8 @@ secrets:
 				nodos remotos y se utiliza el módulo docker_compose para desplegar
 				la aplicación. La variable db_password se define a partir del
 				archivo de secreto y se utiliza en el archivo de Docker Compose a
-				través de la variable de entorno ${DB_PASSWORD}. Además, se
+				través de la variable de entorno </p> <pre>
+				<code>${DB_PASSWORD}</code></pre><p> Además, se
 				especifica el nombre del proyecto (project_name) y se indica el
 				archivo de variables de entorno (env_file) para definir las
 				variables de entorno necesarias para la aplicación.</p>
@@ -2868,14 +2926,16 @@ secrets:
 				todos los nodos de la red (deploy.mode: global). Además, se
 				especifican las variables de entorno necesarias para conectarse a la
 				base de datos, incluyendo una variable de entorno que se define a
-				partir de un secreto (DB_PASSWORD=${DB_PASSWORD}). Se utiliza una
+				partir de un secreto</p> <pre>
+				<code> DB_PASSWORD=${DB_PASSWORD}</code></pre><p> Se utiliza una
 				red llamada app_network para conectar los servicios.</p>
 
 			<p>El servicio db está construido a partir de la imagen de MySQL
 				versión 8.0 y también se especifican las variables de entorno
 				necesarias para la base de datos, incluyendo la contraseña de root,
 				que se define a partir del secreto
-				(MYSQL_ROOT_PASSWORD=${DB_PASSWORD}). Se utiliza el mismo secreto
+				</p> <pre>
+				<code>(MYSQL_ROOT_PASSWORD=${DB_PASSWORD})</code></pre><p> Se utiliza el mismo secreto
 				db_password para la contraseña del usuario de la base de datos.</p>
 
 			<p>Por último, se define el secreto db_password en la sección
@@ -2907,15 +2967,15 @@ services:
 				ejecute en todos los nodos de la red ("deploy.mode: global").
 				Además, se especifican las variables de entorno necesarias para
 				conectarse a la base de datos, incluyendo una variable de entorno
-				que se define a partir de un secreto ("DB_PASSWORD=${DB_PASSWORD}").
-				Se utiliza una red llamada "app_network" para conectar los
+				que se define a partir de un secreto</p><pre> <code>("DB_PASSWORD=${DB_PASSWORD}")</code></pre>
+				<p>Se utiliza una red llamada "app_network" para conectar los
 				servicios.</p>
 
 			<p>El servicio db está construido a partir de la imagen de MySQL
 				versión 8.0 y también se especifican las variables de entorno
 				necesarias para la base de datos, incluyendo la contraseña de root,
-				que se define a partir del secreto
-				("MYSQL_ROOT_PASSWORD=${DB_PASSWORD}"). Se utiliza el mismo secreto
+				que se define a partir del secreto</p>
+				<pre><code>("MYSQL_ROOT_PASSWORD=${DB_PASSWORD}")</code></pre><p> Se utiliza el mismo secreto
 				"db_password" para la contraseña del usuario de la base de datos.</p>
 
 			<p>Por último, se define el secreto "db_password" en la sección
@@ -2953,7 +3013,8 @@ services:
 				nodos remotos y se utiliza el módulo "docker_compose" para desplegar
 				la aplicación. La variable "db_password" se define a partir del
 				archivo de secreto y se utiliza en el archivo de Docker Compose a
-				través de la variable de entorno "${DB_PASSWORD}". Además, se
+				través de la variable de entorno</p> <pre>
+				<code>"${DB_PASSWORD}"</code></pre> <p>Además, se
 				especifica el nombre del proyecto ("project_name") y se indica el
 				archivo de variables de entorno ("env_file") para definir las
 				variables de entorno necesarias para la aplicación.</p>
@@ -2965,59 +3026,10 @@ services:
 
 
 		</div>
-
-		<div class="enunciado-introduccion mt-5">
-			<h1 class="text-center" id="h1-texto-enunciado">Gestión de la
-				escalabilidad y alta disponibilidad en aplicaciones Docker Compose</h1>
-		</div>
-
-
-		<div class="container" style="background-color: #EEEBEB;">
-
-
-			<p>La gestión de la escalabilidad y alta disponibilidad en
-				aplicaciones Docker Compose se puede lograr mediante la
-				configuración de los servicios en el archivo docker-compose.yml.
-				Para escalar un servicio, se puede utilizar el comando
-				"docker-compose up --scale [servicio]=[número de instancias]".</p>
-
-			<p>Por ejemplo, si se tiene un servicio llamado "app" y se desea
-				escalarlo a 5 instancias, se puede ejecutar el siguiente comando:</p>
-
-			<p>
-				<code>docker-compose up --scale app=5</code>
-			</p>
-
-			<p>Para lograr alta disponibilidad, se pueden utilizar
-				estrategias de replicación y balanceo de carga. En Docker Compose,
-				se pueden especificar diferentes estrategias de balanceo de carga
-				para el servicio utilizando la opción "deploy".</p>
-
-			<p>Por ejemplo, se puede especificar que el servicio "app"
-				utilice la estrategia de balanceo de carga "replicated" y tener 3
-				réplicas:</p>
-			<pre>
-				<code>services:
-  app:
-    image: myapp:latest
-    deploy:
-      mode: replicated
-      replicas: 3
-      endpoint_mode: vip
-</code>
-			</pre>
-			<p>Además, se puede utilizar una herramienta externa de
-				orquestación de contenedores como Kubernetes o Docker Swarm para
-				gestionar la escalabilidad y alta disponibilidad en un entorno de
-				producción. Estas herramientas proporcionan funcionalidades
-				avanzadas de gestión de contenedores, incluyendo la recuperación
-				automática en caso de fallos y el equilibrio de carga.</p>
-
-
-
-
-
-		</div>
+		
+		
+		
+		
 	</div>
 
 
